@@ -1,0 +1,79 @@
+---
+---
+
+<div class="text-justify">{{reference}}</div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_{{key}}-bibtex">Bibtex</button>
+
+{% if entry.abstract %}
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_{{key}}-abstract">Abstract</button>
+{% endif %}
+
+{% if entry.doi %}
+<a href="{{ entry.doi | prepend: 'http://doi.org/' }}"><input class="btn btn-2" type="button" value="doi" /></a>
+{% endif %}
+
+{% if entry.preprint %}
+<a href="{{ entry.preprint }}"><input class="btn btn-2" type="button" value="preprint" /></a>
+{% endif %}
+
+{% if entry.url %}
+<a href="{{ entry.url }}"><input class="btn btn-2" type="button" value="link" /></a>
+{% endif %}
+
+<div class="dropDownBibtex" id="{{key}}-bibtex">
+    <pre>{{entry.bibtex}}</pre>
+</div>
+
+<div class="dropDownAbstract" id="{{key}}-abstract">
+    {{entry.abstract}}
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+    // function toggleBibtex{ { entry.key } } (parameter) {
+    //     var x = document.getElementById('a{{entry.key}}');
+    //     if (x.style.display === 'none') {
+    //         x.style.display = 'block';
+    //         x.style.background = '#d6d6d6';
+    //         x.style.padding = '0px 10px';
+    //         x.style.fontSize = '12px';
+    //     } else {
+    //         x.style.display = 'none';
+    //     }
+    // }
+    // function toggleAbstract{ { entry.key } } (parameter) {
+    //     var x = document.getElementById('a{{entry.abstract}}');
+    //     if (x.style.display === 'none') {
+    //         x.style.display = 'block';
+    //         x.style.background = '#d6d6d6';
+    //         x.style.padding = '0px 10px';
+    //         x.style.fontSize = '12px';
+    //     } else {
+    //         x.style.display = 'none';
+    //     }
+    // }
+</script>
