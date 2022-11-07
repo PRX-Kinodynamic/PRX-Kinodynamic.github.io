@@ -1,0 +1,64 @@
+// Bootstrap overrides for this template
+.btn {
+    font-size: 14px;
+    font-weight: 800;
+    padding: 10px 10px;
+    margin: 2px;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 20;
+    font-family: $headings-font-family;
+
+    &:hover{
+        box-shadow: 0px 0px 5px black !important;
+    }
+    &:focus,
+    &:active {
+        color: $white;
+    }
+}
+
+.btn-1 {
+    background-color: $primary;
+    border: 0px;
+    border-color: transparent;
+
+    &:hover{
+        background-color: $primary !important;
+        color: white !important;
+    }
+    &:focus,
+    &:active {
+        color: $white;
+    }
+}
+
+.btn-2 {
+    background-color: green;
+    border: 0px;
+    border-color: transparent;
+
+    &:hover{
+        background-color: $primary !important;
+        color: white !important;
+    }
+    &:focus,
+    &:active {
+        color: $white;
+    }
+}
+.btn-3 {
+    background-color: yellow;
+    border: 0px;
+    border-color: transparent;
+
+    &:hover{
+        background-color: $primary !important;
+        color: white !important;
+    }
+    &:focus,
+    &:active {
+        color: $white;
+    }
+}
