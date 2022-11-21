@@ -1,6 +1,5 @@
 ---
 ---
-
 <div class="text-justify">{{reference}}</div>
 
 <button class="btn btn-1" onclick="toggle(this.id)" id="b_{{key}}-bibtex">Bibtex</button>
@@ -18,7 +17,7 @@
 {% endif %}
 
 {% if entry.url %}
-<a href="{{ entry.url }}"><input class="btn btn-2" type="button" value="link" /></a>
+<a href="{{ entry.url }}" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
 {% endif %}
 
 <div class="dropDownBibtex" id="{{key}}-bibtex">

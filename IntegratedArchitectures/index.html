@@ -2,6 +2,49 @@
 layout: post
 title: Integrated Learning Pipelines
 background: 
----
 
-{% bibliography -f 04_IntegratedArchitectures.tex.bib %}
+---
+<!-- {% bibliography -f 04_IntegratedArchitectures.tex.bib -q @*[tag ^= red] %} -->
+<div>Filter by:</div>
+<div class="btn-group-sm mx-auto" role="group" aria-label="Basic example" id="more">
+</div>
+
+<div id="all" style="display: block;">
+    {% bibliography -f 04_IntegratedArchitectures.tex.bib %}
+</div>
+<div id="neural-motion-planning" style="display: none;">
+    {% bibliography -f 04_IntegratedArchitectures.tex.bib -q @*[tag ^= neural-motion-planning] %}
+</div>
+<div id="retrieve-and-repair" style="display: none;">
+    {% bibliography -f 04_IntegratedArchitectures.tex.bib -q @*[tag ^= retrieve-and-repair] %}
+</div>
+<div id="lower-dim" style="display: none;">
+    {% bibliography -f 04_IntegratedArchitectures.tex.bib -q @*[tag ^= lower-dim] %}
+</div>
+
+
+
+<script>
+    var never = ["All", "Neural-Motion-Planning", "Retrieve-and-Repair", "Lower-Dim"];
+    function display(btn_id){
+        console.log(btn_id);
+        printBib(btn_id);
+    }
+
+    function makeButtons() {
+        for (var i = 0; i < never.length; i++) {
+            document.getElementById("more").innerHTML += "<button class=\"btn btn-secondary\" onclick=\"display(this.id)\" id=\"" + never[i] + "\">" + never[i] + "</button>";
+        }
+    }
+
+    function printBib(btn_id) {
+        c = btn_id.toLowerCase();
+        for (var i = 0; i < never.length; i++) {
+            c_temp = never[i].toLowerCase();
+            elem = document.getElementById(c_temp);
+            elem.style.display = "none";
+        }
+        document.getElementById(c).style.display = "block";
+    }
+    makeButtons();
+</script>
