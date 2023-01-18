@@ -9,28 +9,28 @@ background:
 <div class="btn-group-sm mx-auto" role="group" aria-label="Basic example" id="more">
 </div>
 
-<div id="all" style="display: block;">
+<div id="All" style="display: block;">
     {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib %}
 </div>
-<div id="Sampling Sequences" style="display: none;">
+<div id="Sampling-Sequences" style="display: none;">
     {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= samp] %}
 </div>
-<div id="Collision Checking" style="display: none;">
+<div id="Collision-Checking" style="display: none;">
     {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= cc] %}
 </div>
-<div id="Distance Metrics, Heuristics and Constraints" style="display: none;">
+<div id="Distance-Metrics,-Heuristics-and-Constraints" style="display: none;">
     {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= dm-h-c] %}
 </div>
-<div id="Steering Functions and Local Planners" style="display: none;">
+<div id="Steering-Functions-and-Local-Planners" style="display: none;">
     {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= sf-lp] %}
 </div>
-<div id="Adaptive Selection of Primitives and Meta-Reasoning" style="display: none;">
+<div id="Adaptive-Selection-of-Primitives-and-Meta-Reasoning" style="display: none;">
     {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= as-mr] %}
 </div>
 
 
 <script>
-    var never = ["All", "Sampling Sequences", "Collision Checking", "Distance Metrics, Heuristics and Constraints", "Steering Functions and Local Planners", "Adaptive Selection of Primitives and Meta-Reasoning"];
+    var never = ["All", "Sampling-Sequences", "Collision-Checking", "Distance Metrics-Heuristics-and-Constraints", "Steering-Functions-and-Local-Planners", "Adaptive-Selection-of-Primitives-and-Meta-Reasoning"];
     function display(btn_id){
         console.log(btn_id);
         printBib(btn_id);
