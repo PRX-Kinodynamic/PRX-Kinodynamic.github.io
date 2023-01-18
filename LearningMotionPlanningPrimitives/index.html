@@ -5,3 +5,54 @@ background:
 ---
 
 {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib %}
+
+
+<!-- {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= red] %} -->
+<div>Filter by:</div>
+<div class="btn-group-sm mx-auto" role="group" aria-label="Basic example" id="more">
+</div>
+
+<div id="all" style="display: block;">
+    {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib %}
+</div>
+<div id="Sampling Sequences" style="display: none;">
+    {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= samp] %}
+</div>
+<div id="Collision Checking" style="display: none;">
+    {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= cc] %}
+</div>
+<div id="Distance Metrics, Heuristics and Constraints" style="display: none;">
+    {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= dm-h-c] %}
+</div>
+<div id="Steering Functions and Local Planners" style="display: none;">
+    {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= sf-lp] %}
+</div>
+<div id="Adaptive Selection of Primitives and Meta-Reasoning" style="display: none;">
+    {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= as-mr] %}
+</div>
+
+
+<script>
+    var never = ["All", "Sampling Sequences", "Collision Checking", "Distance Metrics, Heuristics and Constraints", "Steering Functions and Local Planners", "Adaptive Selection of Primitives and Meta-Reasoning"];
+    function display(btn_id){
+        console.log(btn_id);
+        printBib(btn_id);
+    }
+
+    function makeButtons() {
+        for (var i = 0; i < never.length; i++) {
+            document.getElementById("more").innerHTML += "<button class=\"btn btn-secondary\" onclick=\"display(this.id)\" id=\"" + never[i] + "\">" + never[i] + "</button>";
+        }
+    }
+
+    function printBib(btn_id) {
+        c = btn_id.toLowerCase();
+        for (var i = 0; i < never.length; i++) {
+            c_temp = never[i].toLowerCase();
+            elem = document.getElementById(c_temp);
+            elem.style.display = "none";
+        }
+        document.getElementById(c).style.display = "block";
+    }
+    makeButtons();
+</script>
