@@ -9,13 +9,13 @@ background:
 <div class="btn-group-sm mx-auto" role="group" aria-label="Basic example" id="more">
 </div>
 
-<div id="All" style="display: block;">
+<div id="all" style="display: block;">
     {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib %}
 </div>
-<div id="Sampling-Sequences" style="display: none;">
-    {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= "samp"] %}
+<div id="sampling-sequences" style="display: none;">
+    {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= samp] %}
 </div>
-<div id="Collision-Checking" style="display: none;">
+<div id="collision-checking" style="display: none;">
     {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= cc] %}
 </div>
 <div id="Distance-Metrics,-Heuristics-and-Constraints" style="display: none;">
