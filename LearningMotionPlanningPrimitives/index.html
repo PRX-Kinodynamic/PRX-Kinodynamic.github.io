@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Learning Primitives of SBMPs 2
+title: Learning Primitives of SBMPs
 background: 
 
 ---
@@ -18,8 +18,7 @@ background:
 <div id="collision-checking" style="display: none;">
     {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= cc] %}
 </div>
-<!--
-<div id="dmhc" style="display: none;">
+<div id="distance-metrics-heuristics-and-constraints" style="display: none;">
     {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= dm-h-c] %}
 </div>
 <div id="steering-functions-and-local-planners" style="display: none;">
@@ -28,12 +27,11 @@ background:
 <div id="adaptive-selection-of-primitives-and-meta-reasoning" style="display: none;">
     {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= as-mr] %}
 </div>
--->
+
 
 
 <script>
-    var never = ["All", "Sampling-Sequences", "Collision-Checking"];
-    function display(btn_id){
+    var never = ["All", "Sampling-Sequences", "Collision-Checking", "Distance-Metrics-Heuristics-And-Constraints", "Steering-Functions-And-Local-Planners", "Adaptive-Selection-Of-Primitives-And-Meta-Reasoning"];    function display(btn_id){
         console.log(btn_id);
         printBib(btn_id);
     }
