@@ -4,4 +4,45 @@ title: Learning Robot Models for SBMP
 background: 
 ---
 
-{% bibliography -f 05_PlanningUnderUncertainty.tex.bib %}
+<!-- {% bibliography -f 05_PlanningUnderUncertainty.tex.bib -q @*[tag ^= red] %} -->
+<div>Filter by:</div>
+<div class="btn-group-sm mx-auto" role="group" aria-label="Basic example" id="more">
+</div>
+
+<div id="all" style="display: block;">
+    {% bibliography -f 05_PlanningUnderUncertainty.tex.bib %}
+</div>
+<div id="robot-uncertainty" style="display: none;">
+    {% bibliography -f 05_PlanningUnderUncertainty.tex.bib -q @*[tag ^= robot-uncertainty] %}
+</div>
+<div id="sobstacle-uncertainty" style="display: none;">
+    {% bibliography -f 05_PlanningUnderUncertainty.tex.bib -q @*[tag ^= obstacle-uncertainty] %}
+</div>
+
+
+
+
+<script>
+    var never = ["All", "Robot-Uncertainty", "Obstacle-Uncertainty"];   
+    function display(btn_id){
+        console.log(btn_id);
+        printBib(btn_id);
+    }
+
+    function makeButtons() {
+        for (var i = 0; i < never.length; i++) {
+            document.getElementById("more").innerHTML += "<button class=\"btn btn-secondary\" onclick=\"display(this.id)\" id=\"" + never[i] + "\">" + never[i] + "</button>";
+        }
+    }
+
+    function printBib(btn_id) {
+        c = btn_id.toLowerCase();
+        for (var i = 0; i < never.length; i++) {
+            c_temp = never[i].toLowerCase();
+            elem = document.getElementById(c_temp);
+            elem.style.display = "none";
+        }
+        document.getElementById(c).style.display = "block";
+    }
+    makeButtons();
+</script>
