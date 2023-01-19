@@ -18,19 +18,21 @@ background:
 <div id="collision-checking" style="display: none;">
     {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= cc] %}
 </div>
+<!--
 <div id="dmhc" style="display: none;">
     {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= dm-h-c] %}
 </div>
-<!--<div id="steering-functions-and-local-planners" style="display: none;">
+<div id="steering-functions-and-local-planners" style="display: none;">
     {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= sf-lp] %}
 </div>
 <div id="adaptive-selection-of-primitives-and-meta-reasoning" style="display: none;">
     {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= as-mr] %}
-</div>-->
+</div>
+-->
 
 
 <script>
-    var never = ["All", "Sampling-Sequences", "Collision-Checking", "Dmhc"];
+    var never = ["All", "Sampling-Sequences", "Collision-Checking"];
     function display(btn_id){
         console.log(btn_id);
         printBib(btn_id);
