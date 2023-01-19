@@ -18,7 +18,7 @@ background:
 <div id="collision-checking" style="display: none;">
     {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= cc] %}
 </div>
-<div id="distance-metrics-heuristics-constraints" style="display: none;">
+<div id="dmhc" style="display: none;">
     {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= dm-h-c] %}
 </div>
 <!--<div id="steering-functions-and-local-planners" style="display: none;">
@@ -30,7 +30,7 @@ background:
 
 
 <script>
-    var never = ["All", "Sampling-Sequences", "Collision-Checking", "Distance-Metrics-Heuristics-Constraints"];
+    var never = ["All", "Sampling-Sequences", "Collision-Checking", "Dmhc"];
     function display(btn_id){
         console.log(btn_id);
         printBib(btn_id);
