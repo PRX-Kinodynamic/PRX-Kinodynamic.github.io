@@ -18,21 +18,19 @@ background:
 <div id="collision-checking" style="display: none;">
     {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= cc] %}
 </div>
-<!-- 
-<div id="Distance-Metrics-Heuristics-and-Constraints" style="display: none;">
+<div id="distance-metrics-heuristics-and-constraints" style="display: none;">
     {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= dm-h-c] %}
 </div>
-<div id="Steering-Functions-and-Local-Planners" style="display: none;">
+<div id="steering-functions-and-local-planners" style="display: none;">
     {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= sf-lp] %}
 </div>
-<div id="Adaptive-Selection-of-Primitives-and-Meta-Reasoning" style="display: none;">
+<div id="adaptive-selection-of-primitives-and-meta-reasoning" style="display: none;">
     {% bibliography -f 03_LearningMotionPlanningPrimitives.tex.bib -q @*[tag ^= as-mr] %}
 </div>
--->
 
 
 <script>
-    var never = ["All", "Sampling-Sequences", "Collision-Checking"];
+    var never = ["All", "Sampling-Sequences", "Collision-Checking", "Distance-Metrics-Heuristics-And-Constraints", "Steering-Functions-And-Local-Planners", "Adaptive-Selection-Of-Primitives-And-Meta-Reasoning"];
     function display(btn_id){
         console.log(btn_id);
         printBib(btn_id);
