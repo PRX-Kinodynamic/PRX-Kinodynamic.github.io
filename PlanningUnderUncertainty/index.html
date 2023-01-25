@@ -1,0 +1,1867 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    Learning Robot Models for SBMP - PRACSYS
+    
+  </title>
+
+  <meta name="description"
+    content="Bibtex listings for papers by PRACSYS">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/PlanningUnderUncertainty/">
+  <link rel="alternate" type="application/rss+xml" title="PRACSYS" href="/feed.xml">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="https://robotics.cs.rutgers.edu/pracsys/">PRACSYS</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto" style="align-items: center;">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/LearningMotionPlanningPrimitives">Learning Primitives of SBMPs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/IntegratedArchitectures">Integrated Learning Pipelines</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/PlanningUnderUncertainty">Learning Robot Models for SBMP</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+<!-- 
+  <header class="masthead">
+    
+    <div class="overlay"></div> -->
+
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading" >
+            <h1 >Learning Robot Models for SBMP</h1>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </header> -->
+  <div style="padding: 48px;"></div>
+  <div style="position: relative; text-align:center;">
+    <h1 >Learning Robot Models for SBMP</h1>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <!-- <ol class="bibliography"></ol> -->
+<div>Filter by:</div>
+<div class="btn-group-sm mx-auto" role="group" aria-label="Basic example" id="more">
+</div>
+
+<div id="all" style="display: block;">
+    <ol class="bibliography"><li><div class="text-justify"><span id="88149">[1]Q. Zhu, “Hidden Markov model for dynamic obstacle avoidance of mobile robot navigation,” <i>T-RO</i>, vol. 7, no. 3, pp. 390–397, 1991.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_88149-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=88149" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="88149-bibtex">
+    <pre>@article{88149,
+  author = {{Zhu}, Q.},
+  journal = {T-RO},
+  number = {3},
+  pages = {390--397},
+  title = {Hidden Markov model for dynamic obstacle avoidance of mobile robot navigation},
+  volume = {7},
+  year = {1991},
+  tag = {obstacle-uncertainty},
+  link = {https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=88149}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="88149-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="9196564">[2]A. Sintov, A. Kimmel, K. E. Bekris, and A. Boularias, “Motion Planning with Competency-Aware Transition Models for Underactuated Adaptive Hands,” in <i>ICRA</i>, 2020.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_9196564-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="http://rl.cs.rutgers.edu/publications/ICRA20Avishai.pdf" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="9196564-bibtex">
+    <pre>@incollection{9196564,
+  author = {{Sintov}, A. and {Kimmel}, A. and {Bekris}, K. E. and {Boularias}, A.},
+  booktitle = {ICRA},
+  title = {Motion Planning with Competency-Aware Transition Models for Underactuated Adaptive Hands},
+  year = {2020},
+  tag = {robot-uncertainty},
+  link = {http://rl.cs.rutgers.edu/publications/ICRA20Avishai.pdf}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="9196564-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="Aoude2013ProbabilisticallySM">[3]G. Aoude, B. Luders, J. Joseph, N. Roy, and J. How, “Probabilistically safe motion planning to avoid dynamic obstacles with uncertain motion patterns,” <i>Autonomous Robots</i>, vol. 35, pp. 51–76, 2013.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_Aoude2013ProbabilisticallySM-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://link.springer.com/content/pdf/10.1007/s10514-013-9334-3.pdf" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="Aoude2013ProbabilisticallySM-bibtex">
+    <pre>@article{Aoude2013ProbabilisticallySM,
+  author = {Aoude, Georges and Luders, Brandon and Joseph, J. and Roy, N. and How, J.},
+  journal = {Autonomous Robots},
+  pages = {51--76},
+  title = {Probabilistically safe motion planning to avoid dynamic obstacles with uncertain motion patterns},
+  volume = {35},
+  year = {2013},
+  tag = {obstacle-uncertainty},
+  link = {https://link.springer.com/content/pdf/10.1007/s10514-013-9334-3.pdf}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="Aoude2013ProbabilisticallySM-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="bahnemann2017sampling">[4]R. Bähnemann, M. Burri, E. Galceran, R. Siegwart, and J. Nieto, “Sampling-based motion planning for active multirotor system identification,” in <i>ICRA</i>, 2017, pp. 3931–3938.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_bahnemann2017sampling-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://arxiv.org/pdf/1612.05143.pdf" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="bahnemann2017sampling-bibtex">
+    <pre>@incollection{bahnemann2017sampling,
+  author = {B{\"a}hnemann, Rik and Burri, Michael and Galceran, Enric and Siegwart, Roland and Nieto, Juan},
+  booktitle = {ICRA},
+  pages = {3931--3938},
+  title = {Sampling-based motion planning for active multirotor system identification},
+  year = {2017},
+  tag = {robot-uncertainty},
+  link = {https://arxiv.org/pdf/1612.05143.pdf}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="bahnemann2017sampling-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="burri2018framework">[5]M. Burri, M. Bloesch, Z. Taylor, R. Siegwart, and J. Nieto, “A framework for maximum likelihood parameter identification applied on MAVs,” <i>Journal of Field Robotics</i>, vol. 35, no. 1, pp. 5–22, 2018.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_burri2018framework-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://onlinelibrary.wiley.com/doi/epdf/10.1002/rob.21729" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="burri2018framework-bibtex">
+    <pre>@article{burri2018framework,
+  author = {Burri, Michael and Bloesch, Michael and Taylor, Zachary and Siegwart, Roland and Nieto, Juan},
+  journal = {Journal of Field Robotics},
+  number = {1},
+  pages = {5--22},
+  publisher = {Wiley Online Library},
+  title = {A framework for maximum likelihood parameter identification applied on MAVs},
+  volume = {35},
+  year = {2018},
+  link = {https://onlinelibrary.wiley.com/doi/epdf/10.1002/rob.21729},
+  tag = {robot-uncertainty}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="burri2018framework-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="curtis2022long">[6]A. Curtis, X. Fang, L. P. Kaelbling, T. Lozano-Pérez, and C. R. Garrett, “Long-horizon manipulation of unknown objects via task and motion planning with estimated affordances,” in <i>ICRA</i>, 2022.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_curtis2022long-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://arxiv.org/pdf/2108.04145.pdf" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="curtis2022long-bibtex">
+    <pre>@incollection{curtis2022long,
+  author = {Curtis, Aidan and Fang, Xiaolin and Kaelbling, Leslie Pack and Lozano-P{\'e}rez, Tom{\'a}s and Garrett, Caelan Reed},
+  booktitle = {ICRA},
+  title = {Long-horizon manipulation of unknown objects via task and motion planning with estimated affordances},
+  year = {2022},
+  link = {https://arxiv.org/pdf/2108.04145.pdf},
+  tag = {robot-uncertainty}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="curtis2022long-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="doi:10.1177/02783649211004615">[7]Z. Wang, C. R. Garrett, L. P. Kaelbling, and T. Lozano-Pérez, “Learning compositional models of robot skills for task and motion planning,” <i>IJRR</i>, vol. 40, no. 6-7, pp. 866–894, 2021.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_doi:10.1177/02783649211004615-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://arxiv.org/pdf/2108.04145.pdf" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="doi:10.1177/02783649211004615-bibtex">
+    <pre>@article{doi:10.1177/02783649211004615,
+  author = {Wang, Zi and Garrett, Caelan Reed and Kaelbling, Leslie Pack and Lozano-Pérez, Tomás},
+  journal = {IJRR},
+  number = {6-7},
+  pages = {866--894},
+  title = {Learning compositional models of robot skills for task and motion planning},
+  volume = {40},
+  year = {2021},
+  link = {https://arxiv.org/pdf/2108.04145.pdf},
+  tag = {robot-uncertainty}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="doi:10.1177/02783649211004615-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="fulgenzi2008probabilistic">[8]C. Fulgenzi, C. Tay, A. Spalanzani, and C. Laugier, “Probabilistic navigation in dynamic environment using rapidly-exploring random trees and gaussian processes,” in <i>IROS</i>, 2008.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_fulgenzi2008probabilistic-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://hal.inria.fr/inria-00332595/document" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="fulgenzi2008probabilistic-bibtex">
+    <pre>@incollection{fulgenzi2008probabilistic,
+  author = {Fulgenzi, Chiara and Tay, Christopher and Spalanzani, Anne and Laugier, Christian},
+  booktitle = {IROS},
+  title = {Probabilistic navigation in dynamic environment using rapidly-exploring random trees and gaussian processes},
+  year = {2008},
+  link = {https://hal.inria.fr/inria-00332595/document},
+  tag = {obstacle-uncertainty}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="fulgenzi2008probabilistic-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="fulgenzi2010risk">[9]C. Fulgenzi, A. Spalanzani, C. Laugier, and C. Tay, “Risk based motion planning and navigation in uncertain dynamic environment,” Research Report, 2010.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_fulgenzi2010risk-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://hal.inria.fr/inria-00526601" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="fulgenzi2010risk-bibtex">
+    <pre>@techreport{fulgenzi2010risk,
+  author = {Fulgenzi, Chiara and Spalanzani, Anne and Laugier, Christian and Tay, Christopher},
+  hal_id = {inria-00526601},
+  hal_version = {v1},
+  pages = {14},
+  pdf = {https://hal.inria.fr/inria-00526601/file/PPRRT.pdf},
+  title = {{Risk based motion planning and navigation in uncertain dynamic environment}},
+  type = {Research Report},
+  link = {https://hal.inria.fr/inria-00526601},
+  tag = {obstacle-uncertainty},
+  year = {2010}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="fulgenzi2010risk-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="kuffner2000rrt">[10]J. J. Kuffner and S. M. LaValle, “RRT-connect: An efficient approach to single-query path planning,” in <i>ICRA</i>, 2000.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_kuffner2000rrt-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="kuffner2000rrt-bibtex">
+    <pre>@incollection{kuffner2000rrt,
+  author = {Kuffner, James J and LaValle, Steven M},
+  booktitle = {ICRA},
+  title = {RRT-connect: An efficient approach to single-query path planning},
+  year = {2000},
+  tag = {},
+  link = {}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="kuffner2000rrt-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="malone2012implementation">[11]N. Malone, B. Rohrer, L. Tapia, R. Lumia, and J. Wood, “Implementation of an embodied general reinforcement learner on a serial link manipulator,” in <i>ICRA</i>, 2012.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_malone2012implementation-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://www.cs.unm.edu/tapialab/Publications/1.pdf" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="malone2012implementation-bibtex">
+    <pre>@incollection{malone2012implementation,
+  author = {Malone, Nicholas and Rohrer, Brandon and Tapia, Lydia and Lumia, Ron and Wood, John},
+  booktitle = {ICRA},
+  title = {Implementation of an embodied general reinforcement learner on a serial link manipulator},
+  year = {2012},
+  tag = {robot-uncertainty},
+  link = {https://www.cs.unm.edu/tapialab/Publications/1.pdf}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="malone2012implementation-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="McConachie_2020">[12]D. McConachie, T. Power, P. Mitrano, and D. Berenson, “Learning When to Trust a Dynamics Model for Planning in Reduced State Spaces,” <i>RA-L</i>, vol. 5, no. 2, pp. 3540–3547, 2020.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_McConachie_2020-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://arxiv.org/pdf/2001.11051.pdf" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="McConachie_2020-bibtex">
+    <pre>@article{McConachie_2020,
+  author = {McConachie, Dale and Power, Thomas and Mitrano, Peter and Berenson, Dmitry},
+  journal = {RA-L},
+  number = {2},
+  pages = {3540–3547},
+  title = {Learning When to Trust a Dynamics Model for Planning in Reduced State Spaces},
+  volume = {5},
+  year = {2020},
+  tag = {robot-uncertainty},
+  link = {https://arxiv.org/pdf/2001.11051.pdf}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="McConachie_2020-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="omnirobot">[13]E. Granados, A. Boularias, K. Bekris, and M. Aanjaneya, “Model Identification and Control of a Low-Cost Wheeled Mobile Robot Using Differentiable Physics,” <i>ICRA</i>, 2022.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_omnirobot-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://arxiv.org/pdf/2009.11465.pdf" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="omnirobot-bibtex">
+    <pre>@article{omnirobot,
+  author = {Granados, Edgar and Boularias, Abdeslam and Bekris, Kostas and Aanjaneya, Mridul},
+  journal = {ICRA},
+  title = {Model Identification and Control of a Low-Cost Wheeled Mobile Robot Using Differentiable Physics},
+  year = {2022},
+  tag = {robot-uncertainty},
+  link = {https://arxiv.org/pdf/2009.11465.pdf}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="omnirobot-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="osti_10145334">[14]A. Kimmel, A. Sintov, J. Tan, B. Wen, A. Boularias, and K. E. Bekris, “Belief-Space Planning using Learned Models with Application to Underactuated Hands,” <i>ISRR</i>, 2019.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_osti_10145334-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://people.cs.rutgers.edu/ kb572/pubs/belief_space_learned_models_adaptive_hands.pdf" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="osti_10145334-bibtex">
+    <pre>@article{osti_10145334,
+  author = {Kimmel, Andrew and Sintov, Avishai and Tan, Juntao and Wen, Bowen and Boularias, Abdeslam and Bekris, Kostas E},
+  journal = {ISRR},
+  title = {Belief-Space Planning using Learned Models with Application to Underactuated Hands},
+  link = {https://people.cs.rutgers.edu/~kb572/pubs/belief_space_learned_models_adaptive_hands.pdf},
+  tag = {robot-uncertainty},
+  year = {2019}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="osti_10145334-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="zhang2020novel">[15]Y. Zhang, J. Zhang, J. Zhang, J. Wang, K. Lu, and J. Hong, “A novel learning framework for sampling-based motion planning in autonomous driving,” in <i>Proceedings of the AAAI Conference on Artificial Intelligence</i>, vol. 34, no. 01, 2020, pp. 1202–1209.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_zhang2020novel-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://ojs.aaai.org/index.php/AAAI/article/view/5473" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="zhang2020novel-bibtex">
+    <pre>@incollection{zhang2020novel,
+  author = {Zhang, Yifan and Zhang, Jinghuai and Zhang, Jindi and Wang, Jianping and Lu, Kejie and Hong, Jeff},
+  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  number = {01},
+  pages = {1202--1209},
+  title = {A novel learning framework for sampling-based motion planning in autonomous driving},
+  volume = {34},
+  year = {2020},
+  tag = {obstacle-uncertainty},
+  link = {https://ojs.aaai.org/index.php/AAAI/article/view/5473}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="zhang2020novel-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li></ol>
+</div>
+<div id="robot-uncertainty" style="display: none;">
+    <ol class="bibliography"><li><div class="text-justify"><span id="9196564">[1]A. Sintov, A. Kimmel, K. E. Bekris, and A. Boularias, “Motion Planning with Competency-Aware Transition Models for Underactuated Adaptive Hands,” in <i>ICRA</i>, 2020.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_9196564-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="http://rl.cs.rutgers.edu/publications/ICRA20Avishai.pdf" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="9196564-bibtex">
+    <pre>@incollection{9196564,
+  author = {{Sintov}, A. and {Kimmel}, A. and {Bekris}, K. E. and {Boularias}, A.},
+  booktitle = {ICRA},
+  title = {Motion Planning with Competency-Aware Transition Models for Underactuated Adaptive Hands},
+  year = {2020},
+  tag = {robot-uncertainty},
+  link = {http://rl.cs.rutgers.edu/publications/ICRA20Avishai.pdf}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="9196564-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="bahnemann2017sampling">[2]R. Bähnemann, M. Burri, E. Galceran, R. Siegwart, and J. Nieto, “Sampling-based motion planning for active multirotor system identification,” in <i>ICRA</i>, 2017, pp. 3931–3938.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_bahnemann2017sampling-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://arxiv.org/pdf/1612.05143.pdf" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="bahnemann2017sampling-bibtex">
+    <pre>@incollection{bahnemann2017sampling,
+  author = {B{\"a}hnemann, Rik and Burri, Michael and Galceran, Enric and Siegwart, Roland and Nieto, Juan},
+  booktitle = {ICRA},
+  pages = {3931--3938},
+  title = {Sampling-based motion planning for active multirotor system identification},
+  year = {2017},
+  tag = {robot-uncertainty},
+  link = {https://arxiv.org/pdf/1612.05143.pdf}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="bahnemann2017sampling-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="burri2018framework">[3]M. Burri, M. Bloesch, Z. Taylor, R. Siegwart, and J. Nieto, “A framework for maximum likelihood parameter identification applied on MAVs,” <i>Journal of Field Robotics</i>, vol. 35, no. 1, pp. 5–22, 2018.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_burri2018framework-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://onlinelibrary.wiley.com/doi/epdf/10.1002/rob.21729" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="burri2018framework-bibtex">
+    <pre>@article{burri2018framework,
+  author = {Burri, Michael and Bloesch, Michael and Taylor, Zachary and Siegwart, Roland and Nieto, Juan},
+  journal = {Journal of Field Robotics},
+  number = {1},
+  pages = {5--22},
+  publisher = {Wiley Online Library},
+  title = {A framework for maximum likelihood parameter identification applied on MAVs},
+  volume = {35},
+  year = {2018},
+  link = {https://onlinelibrary.wiley.com/doi/epdf/10.1002/rob.21729},
+  tag = {robot-uncertainty}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="burri2018framework-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="curtis2022long">[4]A. Curtis, X. Fang, L. P. Kaelbling, T. Lozano-Pérez, and C. R. Garrett, “Long-horizon manipulation of unknown objects via task and motion planning with estimated affordances,” in <i>ICRA</i>, 2022.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_curtis2022long-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://arxiv.org/pdf/2108.04145.pdf" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="curtis2022long-bibtex">
+    <pre>@incollection{curtis2022long,
+  author = {Curtis, Aidan and Fang, Xiaolin and Kaelbling, Leslie Pack and Lozano-P{\'e}rez, Tom{\'a}s and Garrett, Caelan Reed},
+  booktitle = {ICRA},
+  title = {Long-horizon manipulation of unknown objects via task and motion planning with estimated affordances},
+  year = {2022},
+  link = {https://arxiv.org/pdf/2108.04145.pdf},
+  tag = {robot-uncertainty}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="curtis2022long-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="doi:10.1177/02783649211004615">[5]Z. Wang, C. R. Garrett, L. P. Kaelbling, and T. Lozano-Pérez, “Learning compositional models of robot skills for task and motion planning,” <i>IJRR</i>, vol. 40, no. 6-7, pp. 866–894, 2021.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_doi:10.1177/02783649211004615-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://arxiv.org/pdf/2108.04145.pdf" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="doi:10.1177/02783649211004615-bibtex">
+    <pre>@article{doi:10.1177/02783649211004615,
+  author = {Wang, Zi and Garrett, Caelan Reed and Kaelbling, Leslie Pack and Lozano-Pérez, Tomás},
+  journal = {IJRR},
+  number = {6-7},
+  pages = {866--894},
+  title = {Learning compositional models of robot skills for task and motion planning},
+  volume = {40},
+  year = {2021},
+  link = {https://arxiv.org/pdf/2108.04145.pdf},
+  tag = {robot-uncertainty}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="doi:10.1177/02783649211004615-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="malone2012implementation">[6]N. Malone, B. Rohrer, L. Tapia, R. Lumia, and J. Wood, “Implementation of an embodied general reinforcement learner on a serial link manipulator,” in <i>ICRA</i>, 2012.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_malone2012implementation-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://www.cs.unm.edu/tapialab/Publications/1.pdf" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="malone2012implementation-bibtex">
+    <pre>@incollection{malone2012implementation,
+  author = {Malone, Nicholas and Rohrer, Brandon and Tapia, Lydia and Lumia, Ron and Wood, John},
+  booktitle = {ICRA},
+  title = {Implementation of an embodied general reinforcement learner on a serial link manipulator},
+  year = {2012},
+  tag = {robot-uncertainty},
+  link = {https://www.cs.unm.edu/tapialab/Publications/1.pdf}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="malone2012implementation-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="McConachie_2020">[7]D. McConachie, T. Power, P. Mitrano, and D. Berenson, “Learning When to Trust a Dynamics Model for Planning in Reduced State Spaces,” <i>RA-L</i>, vol. 5, no. 2, pp. 3540–3547, 2020.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_McConachie_2020-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://arxiv.org/pdf/2001.11051.pdf" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="McConachie_2020-bibtex">
+    <pre>@article{McConachie_2020,
+  author = {McConachie, Dale and Power, Thomas and Mitrano, Peter and Berenson, Dmitry},
+  journal = {RA-L},
+  number = {2},
+  pages = {3540–3547},
+  title = {Learning When to Trust a Dynamics Model for Planning in Reduced State Spaces},
+  volume = {5},
+  year = {2020},
+  tag = {robot-uncertainty},
+  link = {https://arxiv.org/pdf/2001.11051.pdf}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="McConachie_2020-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="omnirobot">[8]E. Granados, A. Boularias, K. Bekris, and M. Aanjaneya, “Model Identification and Control of a Low-Cost Wheeled Mobile Robot Using Differentiable Physics,” <i>ICRA</i>, 2022.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_omnirobot-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://arxiv.org/pdf/2009.11465.pdf" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="omnirobot-bibtex">
+    <pre>@article{omnirobot,
+  author = {Granados, Edgar and Boularias, Abdeslam and Bekris, Kostas and Aanjaneya, Mridul},
+  journal = {ICRA},
+  title = {Model Identification and Control of a Low-Cost Wheeled Mobile Robot Using Differentiable Physics},
+  year = {2022},
+  tag = {robot-uncertainty},
+  link = {https://arxiv.org/pdf/2009.11465.pdf}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="omnirobot-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="osti_10145334">[9]A. Kimmel, A. Sintov, J. Tan, B. Wen, A. Boularias, and K. E. Bekris, “Belief-Space Planning using Learned Models with Application to Underactuated Hands,” <i>ISRR</i>, 2019.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_osti_10145334-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://people.cs.rutgers.edu/ kb572/pubs/belief_space_learned_models_adaptive_hands.pdf" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="osti_10145334-bibtex">
+    <pre>@article{osti_10145334,
+  author = {Kimmel, Andrew and Sintov, Avishai and Tan, Juntao and Wen, Bowen and Boularias, Abdeslam and Bekris, Kostas E},
+  journal = {ISRR},
+  title = {Belief-Space Planning using Learned Models with Application to Underactuated Hands},
+  link = {https://people.cs.rutgers.edu/~kb572/pubs/belief_space_learned_models_adaptive_hands.pdf},
+  tag = {robot-uncertainty},
+  year = {2019}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="osti_10145334-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li></ol>
+</div>
+<div id="obstacle-uncertainty" style="display: none;">
+    <ol class="bibliography"><li><div class="text-justify"><span id="88149">[1]Q. Zhu, “Hidden Markov model for dynamic obstacle avoidance of mobile robot navigation,” <i>T-RO</i>, vol. 7, no. 3, pp. 390–397, 1991.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_88149-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=88149" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="88149-bibtex">
+    <pre>@article{88149,
+  author = {{Zhu}, Q.},
+  journal = {T-RO},
+  number = {3},
+  pages = {390--397},
+  title = {Hidden Markov model for dynamic obstacle avoidance of mobile robot navigation},
+  volume = {7},
+  year = {1991},
+  tag = {obstacle-uncertainty},
+  link = {https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=88149}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="88149-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="Aoude2013ProbabilisticallySM">[2]G. Aoude, B. Luders, J. Joseph, N. Roy, and J. How, “Probabilistically safe motion planning to avoid dynamic obstacles with uncertain motion patterns,” <i>Autonomous Robots</i>, vol. 35, pp. 51–76, 2013.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_Aoude2013ProbabilisticallySM-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://link.springer.com/content/pdf/10.1007/s10514-013-9334-3.pdf" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="Aoude2013ProbabilisticallySM-bibtex">
+    <pre>@article{Aoude2013ProbabilisticallySM,
+  author = {Aoude, Georges and Luders, Brandon and Joseph, J. and Roy, N. and How, J.},
+  journal = {Autonomous Robots},
+  pages = {51--76},
+  title = {Probabilistically safe motion planning to avoid dynamic obstacles with uncertain motion patterns},
+  volume = {35},
+  year = {2013},
+  tag = {obstacle-uncertainty},
+  link = {https://link.springer.com/content/pdf/10.1007/s10514-013-9334-3.pdf}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="Aoude2013ProbabilisticallySM-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="fulgenzi2008probabilistic">[3]C. Fulgenzi, C. Tay, A. Spalanzani, and C. Laugier, “Probabilistic navigation in dynamic environment using rapidly-exploring random trees and gaussian processes,” in <i>IROS</i>, 2008.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_fulgenzi2008probabilistic-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://hal.inria.fr/inria-00332595/document" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="fulgenzi2008probabilistic-bibtex">
+    <pre>@incollection{fulgenzi2008probabilistic,
+  author = {Fulgenzi, Chiara and Tay, Christopher and Spalanzani, Anne and Laugier, Christian},
+  booktitle = {IROS},
+  title = {Probabilistic navigation in dynamic environment using rapidly-exploring random trees and gaussian processes},
+  year = {2008},
+  link = {https://hal.inria.fr/inria-00332595/document},
+  tag = {obstacle-uncertainty}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="fulgenzi2008probabilistic-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="fulgenzi2010risk">[4]C. Fulgenzi, A. Spalanzani, C. Laugier, and C. Tay, “Risk based motion planning and navigation in uncertain dynamic environment,” Research Report, 2010.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_fulgenzi2010risk-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://hal.inria.fr/inria-00526601" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="fulgenzi2010risk-bibtex">
+    <pre>@techreport{fulgenzi2010risk,
+  author = {Fulgenzi, Chiara and Spalanzani, Anne and Laugier, Christian and Tay, Christopher},
+  hal_id = {inria-00526601},
+  hal_version = {v1},
+  pages = {14},
+  pdf = {https://hal.inria.fr/inria-00526601/file/PPRRT.pdf},
+  title = {{Risk based motion planning and navigation in uncertain dynamic environment}},
+  type = {Research Report},
+  link = {https://hal.inria.fr/inria-00526601},
+  tag = {obstacle-uncertainty},
+  year = {2010}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="fulgenzi2010risk-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li>
+<li><div class="text-justify"><span id="zhang2020novel">[5]Y. Zhang, J. Zhang, J. Zhang, J. Wang, K. Lu, and J. Hong, “A novel learning framework for sampling-based motion planning in autonomous driving,” in <i>Proceedings of the AAAI Conference on Artificial Intelligence</i>, vol. 34, no. 01, 2020, pp. 1202–1209.</span></div>
+
+<button class="btn btn-1" onclick="toggle(this.id)" id="b_zhang2020novel-bibtex">Bibtex</button>
+
+
+
+
+
+
+
+
+<a href="https://ojs.aaai.org/index.php/AAAI/article/view/5473" target="_blank" rel="noopener noreferrer"><input class="btn btn-2" type="button" value="link" /></a>
+
+
+<div class="dropDownBibtex" id="zhang2020novel-bibtex">
+    <pre>@incollection{zhang2020novel,
+  author = {Zhang, Yifan and Zhang, Jinghuai and Zhang, Jindi and Wang, Jianping and Lu, Kejie and Hong, Jeff},
+  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  number = {01},
+  pages = {1202--1209},
+  title = {A novel learning framework for sampling-based motion planning in autonomous driving},
+  volume = {34},
+  year = {2020},
+  tag = {obstacle-uncertainty},
+  link = {https://ojs.aaai.org/index.php/AAAI/article/view/5473}
+}
+</pre>
+</div>
+
+<div class="dropDownAbstract" id="zhang2020novel-abstract">
+    
+</div>
+<script>
+
+    function toggle(btn_id) {
+        var spl = btn_id.split("_");
+        var drop = document.getElementById(spl[1]);
+        // if (drop.style.display === 'none') {
+        //     drop.style.display = 'block';
+        // }
+        // else {
+        //     drop.style.display = 'none';
+        // }
+        if (drop.style.visibility == 'hidden') {
+            drop.style.visibility = 'visible';
+            drop.style.opacity = '1';
+            drop.style.height = '100%';
+            // drop.style.width = '100%';
+            drop.style.padding = '.5em';
+        }
+        else {
+            drop.style.visibility = 'hidden';
+            drop.style.opacity = '0';
+            drop.style.height = '0';
+            // drop.style.width = '0';
+            drop.style.padding = '0';
+        }
+    }
+</script></li></ol>
+</div>
+
+
+
+
+<script>
+    var never = ["All", "Robot-Uncertainty", "Obstacle-Uncertainty"];   
+    function display(btn_id){
+        console.log(btn_id);
+        printBib(btn_id);
+    }
+
+    function makeButtons() {
+        for (var i = 0; i < never.length; i++) {
+            document.getElementById("more").innerHTML += "<button class=\"btn btn-secondary\" onclick=\"display(this.id)\" id=\"" + never[i] + "\">" + never[i] + "</button>";
+        }
+    }
+
+    function printBib(btn_id) {
+        c = btn_id.toLowerCase();
+        for (var i = 0; i < never.length; i++) {
+            c_temp = never[i].toLowerCase();
+            elem = document.getElementById(c_temp);
+            elem.style.display = "none";
+        }
+        document.getElementById(c).style.display = "block";
+    }
+    makeButtons();
+</script>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:kostas.bekris@cs.rutgers.edu">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/PRX-Kinodynamic">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; PRACSYS 2023</p>
+      </div>
+    </div>
+  </div>
+  
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/startbootstrap-clean-blog/js/scripts.js"></script>
+
+<script src="/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-XXXXXXXXX-X');
+</script>
+
+
+
+</body>
+
+
+</html>
