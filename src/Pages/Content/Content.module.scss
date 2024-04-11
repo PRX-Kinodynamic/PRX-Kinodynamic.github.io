@@ -1,0 +1,13 @@
+@import '../../styles.module';
+
+.projectsHeading {
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.projectList {
+  @include flex;
+  flex-direction: column;
+  justify-content: center;
+}
