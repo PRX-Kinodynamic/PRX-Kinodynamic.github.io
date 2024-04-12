@@ -1127,7 +1127,7 @@ input.btn-block[type="submit"], input.btn-block[type="reset"], input.btn-block[t
 
 .navbar .container, .navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; }
 
-.navbar-brand { display: inline-block; padding-top: 0.3125rem; padding-bottom: 0.3125rem; margin-right: 1rem; font-size: 1.25rem; line-height: inherit; white-space: nowrap; }
+.navbar-brand { display: inline-block; padding-top: 0.3125rem; padding-bottom: 0.3125rem; margin-right: 1rem; font-size: 1.25rem; line-height: inherit; white-space: nowrap; font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
 
 .navbar-brand:hover, .navbar-brand:focus { text-decoration: none; }
 
