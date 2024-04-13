@@ -15,7 +15,7 @@
 
       var l = window.location;
 
-      console.log(('ml_sbmp_survey' in l.pathname))
+      location.pathname.includes('ml_sbmp_survey');
 
       if (!location.pathname.includes('ml_sbmp_survey')) {
         l.replace(
