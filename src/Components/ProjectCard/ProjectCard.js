@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import styles from './ProjectCard.module.scss';
 import {useHistory} from "react-router-dom";
@@ -9,7 +8,7 @@ function ProjectCard({projectDetails}) {
   const history = useHistory();
   const handleClick = () => {
     if (projectDetails.redirect){
-      window.location.href = window.location.origin + projectDetails.urlSuffix
+      window.open(projectDetails.url, "_blank")
     }
     else{
       history.push(projectDetails.urlSuffix)

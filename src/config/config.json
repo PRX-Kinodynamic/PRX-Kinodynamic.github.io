@@ -3,7 +3,7 @@
     {
       "id": "ml_sbmp_survey",
       "name": "A Survey on the Integration of Machine Learning with Sampling-based Motion Planning",
-      "urlSuffix": "/ml_sbmp_survey",
+      "url": "https://prx-kinodynamic.github.io/ML_SBMP_Survey",
       "redirect": true
     },
     {

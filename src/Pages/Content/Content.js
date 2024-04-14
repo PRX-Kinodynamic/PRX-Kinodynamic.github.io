@@ -1,5 +1,4 @@
-import React, {useEffect} from 'react';
-import { withRouter } from "react-router-dom";
+import React from 'react';
 
 import _map from 'lodash/map';
 
@@ -9,8 +8,6 @@ import styles from './Content.module.scss';
 import ProjectCard from "../../Components/ProjectCard";
 
 function Content(props) {
-  const {history, match} = props
-  
   return (
     <div>
       <div className={styles.projectsHeading}>Projects</div>
@@ -28,4 +25,4 @@ function Content(props) {
 
 Content.propTypes = {};
 
-export default withRouter(Content);
+export default Content;

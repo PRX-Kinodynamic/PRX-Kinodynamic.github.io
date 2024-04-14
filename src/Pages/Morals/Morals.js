@@ -1,7 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-import styles from './Morals.module.scss';
+// import styles from './Morals.module.scss';
 
 function Morals(props) {
   return (
