@@ -1,9 +1,10 @@
-import './App.css';
 import Base from "./Pages/Base";
+
+import styles from './App.module.scss';
 
 function App() {
   return (
-    <div className="App">
+    <div className={styles.App}>
       <Base />
     </div>
   );

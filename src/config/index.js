@@ -1,10 +1,8 @@
 import rawConfig from "./config.json";
 
-// const mediaURL = "https://raw.githubusercontent.com/sumanth-tangirala/personal-webpage/main/media";
-// const docsURL = `https://docs.google.com/viewer?url=${mediaURL}`;
+const mediaURL = "https://raw.githubusercontent.com/PRX-Kinodynamic/PRX-Kinodynamic.github.io/main/media/";
 
-const updatedText = JSON.stringify(rawConfig)
-  // .replaceAll("%MEDIA_URL%", mediaURL)
-  // .replaceAll("%DOCS_URL%", docsURL);
+const updatedConfig = JSON.stringify(rawConfig)
+  .replaceAll("%MEDIA_URL%", mediaURL);
 
-export default JSON.parse(updatedText);
+export default JSON.parse(updatedConfig);

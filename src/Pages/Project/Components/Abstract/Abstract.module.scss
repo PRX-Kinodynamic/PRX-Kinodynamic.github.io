@@ -1,0 +1,24 @@
+@import 'src/styles.module.scss';
+
+.abtractContainer {
+  @include flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 1.5rem 0;
+  font-family:Google Sans,sans-serif;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+
+.abstractText {
+  font-size: 1.1rem;
+  text-align: justify;
+  margin-bottom: 1rem;
+  color: $grey;
+  line-height: 1.5rem;
+}

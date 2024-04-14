@@ -2,12 +2,13 @@ import React from 'react';
 
 import styles from './ProjectCard.module.scss';
 import {useHistory} from "react-router-dom";
+import htmlParse from "html-react-parser";
 
 function ProjectCard({projectDetails}) {
   
   const history = useHistory();
   const handleClick = () => {
-    if (projectDetails.redirect){
+    if (projectDetails.should_redirect){
       window.open(projectDetails.url, "_blank")
     }
     else{
@@ -18,7 +19,7 @@ function ProjectCard({projectDetails}) {
   return (
     <div className={styles.container} onClick={handleClick}>
       <div className={styles.title}>
-        {projectDetails.name}
+        {htmlParse(projectDetails.name)}
       </div>
     </div>
   );

@@ -4,17 +4,17 @@ import _map from 'lodash/map';
 
 import config from 'config';
 
-import styles from './Content.module.scss';
+import styles from './Home.module.scss';
 import ProjectCard from "../../Components/ProjectCard";
 
-function Content(props) {
+function Home(props) {
   return (
     <div>
       <div className={styles.projectsHeading}>Projects</div>
       <div className={styles.projectList}>
         {
-          _map(config.projects, (projectDetails) => (
-            <ProjectCard projectDetails={projectDetails} key={projectDetails.id}/>
+          _map(config.projects, (projectDetails, projectId) => (
+            <ProjectCard projectDetails={projectDetails} key={projectId}/>
           ))
         }
       </div>
@@ -23,6 +23,6 @@ function Content(props) {
   );
 }
 
-Content.propTypes = {};
+Home.propTypes = {};
 
-export default Content;
+export default Home;

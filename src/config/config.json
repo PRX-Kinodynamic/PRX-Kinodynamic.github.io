@@ -1,15 +1,105 @@
 {
-  "projects": [
-    {
+  "pracsysLogoURL": "%MEDIA_URL%/img/pracsys_greek.png",
+  "pracsysRutgersLogoURL": "%MEDIA_URL%/img/pracsys_rutgers.png",
+  "rutgersLogoURL": "%MEDIA_URL%/img/Rutgers_Logo.png",
+
+  "githubLogoURL": "%MEDIA_URL%/img/github.svg",
+  "paperLogoURL": "%MEDIA_URL%/img/paper.svg",
+  "arxivLogoURL": "%MEDIA_URL%/img/arxiv.svg",
+
+  "institutes": {
+    "rutgers": {
+      "shortName": "Rutgers University",
+      "longName": "Rutgers, The State University of New Jersey",
+      "departments": {
+        "math": {
+          "name": "Dept. of Mathematics",
+          "url": "https://www.math.rutgers.edu/"
+        },
+        "cs": {
+          "name": "Dept. of Computer Science",
+          "url": "https://www.cs.rutgers.edu/"
+        }
+      }
+    }
+  },
+
+  "authorsMetadata": {
+    "ewerton": {
+      "name": "Ewerton R. Vieira",
+      "url": "https://ewerton-vieira.github.io/",
+      "institute": "rutgers",
+      "department": "math"
+    },
+    "aravind": {
+      "name": "Aravind Sivaramakrishnan",
+      "url": "https://people.cs.rutgers.edu/~as2578/",
+      "institute": "rutgers",
+      "department": "cs"
+    },
+    "sumanth": {
+      "name": "Sumanth Tangirala",
+      "url": "https://sumanthtangirala.com/",
+      "institute": "rutgers",
+      "department": "cs"
+    },
+    "edgar": {
+      "name": "Edgar Granados",
+      "url": "https://www.linkedin.com/in/garygra/",
+      "institute": "rutgers",
+      "department": "cs"
+    },
+    "konstantin": {
+      "name": "Konstantin Mischaikow",
+      "url": "https://sites.math.rutgers.edu/~mischaik/",
+      "institute": "rutgers",
+      "department": "math"
+    },
+    "kostas": {
+      "name": "Kostas E. Bekris",
+      "url": "https://robotics.cs.rutgers.edu/pracsys/members/kostas-bekris/",
+      "institute": "rutgers",
+      "department": "cs"
+    }
+  },
+
+  "projects": {
+    "ml_sbmp_survey": {
       "id": "ml_sbmp_survey",
       "name": "A Survey on the Integration of Machine Learning with Sampling-based Motion Planning",
       "url": "https://prx-kinodynamic.github.io/ML_SBMP_Survey",
-      "redirect": true
+      "should_redirect": true
     },
-    {
+    "morals": {
       "id": "morals",
-      "name": "MORALS: Analysis of High-Dimensional Robot Controllers via Topological Tools in a Latent Space",
-      "urlSuffix": "/morals"
+      "urlSuffix": "/projects/morals",
+      "is_markdown": true,
+      "should_redirect": false,
+      "md_path": "%MD_URL%/morals.md",
+
+      "name": "<tt>MORALS:</tt><br/> Analysis of High-Dimensional Robot Controllers via Topological Tools in a Latent Space",
+      "authors": [
+        "ewerton",
+        "aravind",
+        "sumanth",
+        "edgar",
+        "konstantin",
+        "kostas"
+      ],
+      "equalContributors": ["ewerton", "aravind"],
+      "showDepartments": true,
+      "showInstituteByNumber": true,
+      "links": {
+        "arxivURL": "https://arxiv.org/abs/2310.03246",
+        "codeURL": "https://github.com/Ewerton-Vieira/MORALS",
+        "paperURL": "https://arxiv.org/pdf/2310.03246.pdf"
+      },
+      "abstract": "Estimating the region of attraction (<tt>RoA</tt>) for a robot controller is essential for safe application and controller composition. Many existing methods require a closed-form expression that limit applicability to data-driven controllers. Methods that operate only over trajectory rollouts tend to be data-hungry. In prior work, we have demonstrated that topological tools based on Morse Graphs (directed acyclic graphs that combinatorially represent the underlying nonlinear dynamics) offer data-efficient <tt>RoA</tt> estimation without needing an analytical model. They struggle, however, with high-dimensional systems as they operate over a state-space discretization. This paper presents Morse Graph-aided discovery of Regions of Attraction in a learned Latent Space (<tt>MORALS</tt>). The approach combines auto-encoding neural networks with Morse Graphs. <tt>MORALS</tt> shows promising predictive capabilities in estimating attractors and their <tt>RoA</tt>s for data-driven controllers operating over high-dimensional systems, including a 67-dim humanoid robot and a 96-dim 3-fingered manipulator. It first projects the dynamics of the controlled system into a learned latent space. Then, it constructs a reduced form of Morse Graphs representing the bistability of the underlying dynamics, i.e., detecting when the controller results in a desired versus an undesired behavior. The evaluation on high-dimensional robotic datasets indicates data efficiency in <tt>RoA</tt> estimation.",
+      "videoDetails": {
+        "videoURL": "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=ixuv7uhebk7w7eh0oa72aikb9q6k8dy6&file_id=f_1501017491311",
+        "subtitlesURL": "public/subtitles/morals.vtt",
+        "thumbnailURL": "%MEDIA_URL%/img/video_thumbnails/morals.png"
+      }
     }
-  ]
+  }
 }

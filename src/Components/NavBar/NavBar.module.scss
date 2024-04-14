@@ -2,14 +2,93 @@
 
 .container {
   @include flex;
-  width: 100%;
-  height: 4rem;
+  justify-content: flex-start;
+  padding: .8rem 1.5rem;
+  width: calc(100% - 3rem);
+  height: calc($nav_bar_height - 1.6rem);
   box-shadow: 0px 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
 }
 
 .title {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   font-weight: bolder;
-  color: #262626;
+  color: black;
+  margin-right: 1rem;
+}
+
+.logo {
+  max-height: 3.2rem;
+}
+
+.pracsysLogo {
+  margin-right: 1rem;
+  padding-right: 1rem;
+  border-right: 3px solid black;
+}
+
+.rutgersLogo {
+  margin-left: auto;
+}
+
+.pracsysRutgersLogo {
+  display: none;
+  margin-right: 1rem;
+  padding-right: 1rem;
+  border-right: 2px solid black;
+}
+
+@media screen and (max-width: $landscape_tablet_screen_width) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    max-height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: $portrait_tablet_screen_width) {
+  .container {
+    padding: .8rem .5rem;
+    width: calc(100% - 1rem);
+  }
+
+  .pracsysLogo {
+    margin-right: .5rem;
+    padding-right: .5rem;
+    border-right: 2px solid black;
+  }
+
+  .title {
+    font-size: 1.1rem;
+    margin-right: .5rem;
+  }
+
+  .logo {
+    max-height: 2rem;
+  }
+}
+
+@media screen and (max-width: $mobile_screen_width) {
+  .container {
+    justify-content: space-between;
+  }
+
+  .rutgersLogo {
+    display: none;
+  }
+  .pracsysLogo {
+    display: none;
+  }
+
+  .pracsysRutgersLogo {
+    display: block;
+    max-height: 4rem !important;
+  }
+
+  .title {
+    font-size: 1.1rem;
+    margin-right: .5rem;
+  }
 }

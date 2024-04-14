@@ -1,19 +1,17 @@
-import {Route, Switch} from "react-router-dom";
+import {Route, Switch, Redirect} from "react-router-dom";
 import React from "react";
-import Content from "../Content";
-import Morals from "../Morals";
+import Home from "../Home";
+import Project from "../Project";
 
 function Routes(props) {
   return (
     <Switch>
-      <Route path="/morals">
-        <Morals />
-      </Route>
-      <Route path="/morals">
-        <Morals />
+      <Redirect exact from="/morals" to="/projects/morals" />
+      <Route path="/projects/:projectId">
+        <Project />
       </Route>
       <Route path="/">
-        <Content />
+        <Home />
       </Route>
     </Switch>
   );

@@ -1,0 +1,56 @@
+@import 'src/styles.module.scss';
+
+.authorsContainer {
+  width: 100%;
+  margin-bottom: .5rem;
+}
+
+.authorList {
+  width: 100%;
+  margin: 1rem;
+  @include flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 2rem;
+}
+
+.authorContainer {
+  @include flex;
+  padding: 0 .5rem;
+  text-decoration: none;
+  color: $honolulu_blue;
+  white-space: nowrap;
+}
+
+.author {
+  font-size: 1.2rem;
+  text-align: center;
+  white-space: nowrap;
+  transition: all .1s ease;
+  text-decoration: transparent underline;
+  &:hover {
+    text-decoration-color: $honolulu_blue;
+  }
+}
+
+.instituteNumber {
+  text-decoration: none !important;
+  margin-left: .12rem;
+  margin-bottom: .2rem;
+  font-size: .8rem;
+}
+
+.instituteList {
+  @include flex;
+  flex-direction: column;
+  width: 100%;
+  margin: .5rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 2rem;
+}
+
+.institute{
+  padding: 0 .5rem;
+  font-size: 1.2rem;
+}

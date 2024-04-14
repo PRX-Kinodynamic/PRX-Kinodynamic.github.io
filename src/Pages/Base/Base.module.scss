@@ -1,1 +1,7 @@
-@import '../../styles.module';
+@import 'src/styles.module';
+
+.contentContainer {
+  height: calc(100% - $nav_bar_height);
+  overflow-y: auto;
+  padding-bottom: 2rem;
+}
