@@ -1,12 +1,26 @@
 @import '../../styles.module';
 
+$hover_color: $light_grey;
+
 .container {
   @include flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: .8rem 1.5rem;
   width: calc(100% - 3rem);
   height: calc($nav_bar_height - 1.6rem);
   box-shadow: 0px 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+.pracsysContainer {
+  @include flex;
+  justify-content: flex-start;
+  transition: all .25s ease-in-out;
+  border-radius: 1rem;
+}
+
+.hover {
+  cursor: pointer;
+  background-color: $hover_color;
 }
 
 .title {
@@ -19,16 +33,29 @@
 
 .logo {
   max-height: 3.2rem;
+  transition: all .25s ease-in-out;
 }
 
 .pracsysLogo {
+  padding: .5rem;
   margin-right: 1rem;
-  padding-right: 1rem;
-  border-right: 3px solid black;
+  border-radius: 1rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $hover_color;
+  }
+
+  &::after {
+    content: '';
+    border-right: 3px solid black;
+    height: 100%;
+    width: 2rem;
+  }
 }
 
 .rutgersLogo {
-  margin-left: auto;
+
 }
 
 .pracsysRutgersLogo {

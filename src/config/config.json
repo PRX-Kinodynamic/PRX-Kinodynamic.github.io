@@ -7,6 +7,8 @@
   "paperLogoURL": "%MEDIA_URL%/img/paper.svg",
   "arxivLogoURL": "%MEDIA_URL%/img/arxiv.svg",
 
+  "pracsysURL": "https://robotics.cs.rutgers.edu/pracsys/",
+
   "institutes": {
     "rutgers": {
       "shortName": "Rutgers University",
