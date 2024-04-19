@@ -4,8 +4,15 @@
   border: 1px solid black;
   width: 60%;
   margin: 1rem 0;
+  @include flex;
+  flex-direction: column;
 }
 
 .title {
+  font-size: 1.3rem;
+}
 
+.image {
+  max-width: 70%;
+  max-height: 15rem;
 }

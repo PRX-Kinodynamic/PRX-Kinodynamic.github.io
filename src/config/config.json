@@ -70,14 +70,14 @@
       "id": "ml_sbmp_survey",
       "name": "A Survey on the Integration of Machine Learning with Sampling-based Motion Planning",
       "url": "https://prx-kinodynamic.github.io/ML_SBMP_Survey",
-      "should_redirect": true
+      "should_redirect": true,
+      "imageURL": "%MEDIA_URL%/img/ml_sbmp_survey.jpeg"
     },
     "morals": {
       "id": "morals",
       "urlSuffix": "/projects/morals",
-      "is_markdown": true,
       "should_redirect": false,
-      "md_path": "%MD_URL%/morals.md",
+      "imageURL": "%MEDIA_URL%/img/morals.jpeg",
 
       "name": "<tt>MORALS:</tt><br/> Analysis of High-Dimensional Robot Controllers via Topological Tools in a Latent Space",
       "authors": [
@@ -100,7 +100,7 @@
       "videoDetails": {
         "youtubeEmbedURL": "https://www.youtube.com/embed/l3znwTe7cwU?si=51SMigCbk2-jDNqp",
         "videoURL": "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=ixuv7uhebk7w7eh0oa72aikb9q6k8dy6&file_id=f_1501017491311",
-        "thumbnailURL": "%MEDIA_URL%/img/video_thumbnails/morals.png"
+        "thumbnailURL": "%MEDIA_URL%/img/morals.jpeg"
       }
     }
   }
