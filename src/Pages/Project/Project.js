@@ -1,22 +1,28 @@
-import React  from 'react';
-import config from 'config';
+import React, {useEffect} from 'react';
 
 import {useRouteMatch} from "react-router-dom";
-
 
 import Abstract from "./Components/Abstract";
 import Authors from "./Components/Authors";
 import Links from "./Components/Links";
 import Video from "./Components/Video";
+import Title from "./Components/Title";
+
+import {stripHTML} from "../../helpers";
 
 import styles from './Project.module.scss';
-import Title from "./Components/Title";
+
+import config from 'config';
 
 function Project(props) {
   const match = useRouteMatch();
   const projectId = match.params.projectId;
   
   const projectDetails = config.projects[projectId];
+  
+  useEffect(() => {
+    document.title = stripHTML(projectDetails.name);
+  }, [projectDetails.name]);
   
   return (
     <div className={styles.container}>
@@ -28,8 +34,8 @@ function Project(props) {
         showInstituteByNumber={projectDetails.showInstituteByNumber}
       />
       <Links links={projectDetails.links}/>
+      <Video {...projectDetails.videoDetails} name={projectDetails.name}/>
       <Abstract abstract={projectDetails.abstract}/>
-      <Video {...projectDetails.videoDetails}/>
     </div>
   );
 }

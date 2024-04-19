@@ -98,8 +98,8 @@
       },
       "abstract": "Estimating the region of attraction (<tt>RoA</tt>) for a robot controller is essential for safe application and controller composition. Many existing methods require a closed-form expression that limit applicability to data-driven controllers. Methods that operate only over trajectory rollouts tend to be data-hungry. In prior work, we have demonstrated that topological tools based on Morse Graphs (directed acyclic graphs that combinatorially represent the underlying nonlinear dynamics) offer data-efficient <tt>RoA</tt> estimation without needing an analytical model. They struggle, however, with high-dimensional systems as they operate over a state-space discretization. This paper presents Morse Graph-aided discovery of Regions of Attraction in a learned Latent Space (<tt>MORALS</tt>). The approach combines auto-encoding neural networks with Morse Graphs. <tt>MORALS</tt> shows promising predictive capabilities in estimating attractors and their <tt>RoA</tt>s for data-driven controllers operating over high-dimensional systems, including a 67-dim humanoid robot and a 96-dim 3-fingered manipulator. It first projects the dynamics of the controlled system into a learned latent space. Then, it constructs a reduced form of Morse Graphs representing the bistability of the underlying dynamics, i.e., detecting when the controller results in a desired versus an undesired behavior. The evaluation on high-dimensional robotic datasets indicates data efficiency in <tt>RoA</tt> estimation.",
       "videoDetails": {
+        "youtubeEmbedURL": "https://www.youtube.com/embed/l3znwTe7cwU?si=51SMigCbk2-jDNqp",
         "videoURL": "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=ixuv7uhebk7w7eh0oa72aikb9q6k8dy6&file_id=f_1501017491311",
-        "subtitlesURL": "public/subtitles/morals.vtt",
         "thumbnailURL": "%MEDIA_URL%/img/video_thumbnails/morals.png"
       }
     }
