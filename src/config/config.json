@@ -3,9 +3,10 @@
   "pracsysRutgersLogoURL": "%MEDIA_URL%/img/pracsys_rutgers.png",
   "rutgersLogoURL": "%MEDIA_URL%/img/Rutgers_Logo.png",
 
-  "githubLogoURL": "%MEDIA_URL%/img/github.svg",
-  "paperLogoURL": "%MEDIA_URL%/img/paper.svg",
-  "arxivLogoURL": "%MEDIA_URL%/img/arxiv.svg",
+  "githubLogoURL": "%LOCAL_MEDIA_URL%/img/github.svg",
+  "paperLogoURL": "%LOCAL_MEDIA_URL%/img/paper.svg",
+  "arxivLogoURL": "%LOCAL_MEDIA_URL%/img/arxiv.svg",
+  "copyLogoURL": "%LOCAL_MEDIA_URL%/img/copy.svg",
 
   "pracsysURL": "https://robotics.cs.rutgers.edu/pracsys/",
 
@@ -78,6 +79,7 @@
       "urlSuffix": "/projects/morals",
       "should_redirect": false,
       "imageURL": "%MEDIA_URL%/img/morals.jpeg",
+      "bibtex": "@article{vieira2024morals,\n\tauthor={Ewerton R. Vieira and Aravind Sivaramakrishnan and Sumanth Tangirala and Edgar Granados and Konstantin Mischaikow and Kostas E. Bekris},\n\ttitle={MORALS: Analysis of High-Dimensional Robot Controllers via Topological Tools in a Latent Space}, \n\tjournal={ICRA}, \n\tyear={2024},\n}",
 
       "name": "<tt>MORALS:</tt><br/> Analysis of High-Dimensional Robot Controllers via Topological Tools in a Latent Space",
       "authors": [

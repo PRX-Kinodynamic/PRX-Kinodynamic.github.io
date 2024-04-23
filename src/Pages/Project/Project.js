@@ -13,6 +13,7 @@ import {stripHTML} from "../../helpers";
 import styles from './Project.module.scss';
 
 import config from 'config';
+import BibTeX from "./Components/BibTeX";
 
 function Project(props) {
   const match = useRouteMatch();
@@ -34,6 +35,7 @@ function Project(props) {
         showInstituteByNumber={projectDetails.showInstituteByNumber}
       />
       <Links links={projectDetails.links}/>
+      <BibTeX bibtex={projectDetails.bibtex}/>
       <Video {...projectDetails.videoDetails} name={projectDetails.name}/>
       <Abstract abstract={projectDetails.abstract}/>
     </div>

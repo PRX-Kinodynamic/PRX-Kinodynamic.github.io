@@ -1,18 +1,72 @@
 @import 'src/styles.module.scss';
 
+$image_top_gap: 0rem;
+$backgroundColor: #303030b0;
+$side_padding: 0.5rem;
+$height_padding: 1rem;
+$border_radius: 0.5rem;
+
+
 .container {
-  border: 1px solid black;
   width: 60%;
+  aspect-ratio: 2/1;
   margin: 1rem 0;
   @include flex;
   flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  max-height: 20rem;
+  height: auto;
+  border-radius: $border_radius;
+  transition: all .25s ease;
+  box-shadow:  0.15rem 0.15rem 0.15rem 0.05rem rgba(0, 0, 0, 0.3);
+  &:hover {
+    transform: translate3d(0, -0.3rem, 0);
+    box-shadow: 0.25rem 0.25rem 0.2rem 0.1rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
 }
 
 .title {
   font-size: 1.3rem;
+  color: white;
+  width: calc(100% - 2 * $side_padding);
+  //height: calc(100% - 2 * $height_padding);
+  z-index: 1;
+  background: #00000083;
+  //background: linear-gradient(to bottom, rgba(25, 25, 25,0.95) 0%, rgba(25, 25, 25,0) 35%, rgba(25, 25, 25,0) 100%);
+  backdrop-filter: blur(1px);
+  padding: $height_padding $side_padding;
+  border-top-left-radius: $border_radius;
+  border-top-right-radius: $border_radius;
+  transition: all .25s ease;
 }
 
 .image {
-  max-width: 70%;
-  max-height: 15rem;
+  object-fit: cover;
+  width: 100%;
+  height: calc(100% - $image_top_gap);
+  position: absolute;
+  top: $image_top_gap;
+  object-position: bottom 0;
+  border-radius: $border_radius;
+}
+
+@media screen and (max-width:$landscape_tablet_screen_width) {
+  .container {
+    justify-content: center;
+    align-items: center;
+    box-shadow:  0.15rem 0.15rem 0.15rem 0.05rem rgba(0, 0, 0, 0.7);
+    &:hover {
+      transform: translate3d(0, -0.3rem, 0);
+      box-shadow: 0.25rem 0.25rem 0.2rem 0.1rem rgba(0, 0, 0, 0.7);
+      cursor: pointer;
+    }
+  }
+  .title {
+    height: calc(100% - 2 * $height_padding);
+    border-radius: $border_radius;
+    font-size: 1.1rem;
+    background: #00000070;
+  }
 }
