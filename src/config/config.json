@@ -63,6 +63,12 @@
       "url": "https://robotics.cs.rutgers.edu/pracsys/members/kostas-bekris/",
       "institute": "rutgers",
       "department": "cs"
+    },
+    "noah": {
+      "name": "Noah R. Carver",
+      "url": "https://noahrcarver.github.io/",
+      "institute": "rutgers",
+      "department": "cs"
     }
   },
 
@@ -80,7 +86,11 @@
       "should_redirect": false,
       "imageURL": "%MEDIA_URL%/img/morals.jpeg",
       "bibtex": "@article{vieira2024morals,\n\tauthor={Ewerton R. Vieira and Aravind Sivaramakrishnan and Sumanth Tangirala and Edgar Granados and Konstantin Mischaikow and Kostas E. Bekris},\n\ttitle={MORALS: Analysis of High-Dimensional Robot Controllers via Topological Tools in a Latent Space}, \n\tjournal={ICRA}, \n\tyear={2024},\n}",
-
+      "venue": {
+        "imageURL": "%LOCAL_MEDIA_URL%/img/icra_2024.png",
+        "name": "ICRA 2024",
+        "url": "https://2024.ieee-icra.org/"
+      },
       "name": "<tt>MORALS:</tt><br/> Analysis of High-Dimensional Robot Controllers via Topological Tools in a Latent Space",
       "authors": [
         "ewerton",
@@ -104,6 +114,28 @@
         "videoURL": "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=ixuv7uhebk7w7eh0oa72aikb9q6k8dy6&file_id=f_1501017491311",
         "thumbnailURL": "%MEDIA_URL%/img/morals.jpeg"
       }
+    },
+    "rogue": {
+      "id": "rogue",
+      "urlSuffix": "/projects/rogue",
+      "should_redirect": false,
+      "imageURL": "%MEDIA_URL%/img/rogue.png",
+      "comment_bibtex": "@misc{sivaramakrishnan2024roadmaps,\n\tauthor={Aravind Sivaramakrishnan and Sumanth Tangirala and Edgar Granados and Noah R. Carver and Kostas E. Bekris},\n\ttitle={Roadmaps with Gaps over Controllers: Achieving Efficiency in Planning under Dynamics},\n}",
+
+      "name": "Roadmaps with Gaps over Controllers: Achieving Efficiency in Planning under Dynamics",
+      "authors": [
+        "aravind",
+        "sumanth",
+        "edgar",
+        "noah",
+        "kostas"
+      ],
+      "showDepartments": true,
+      "links": {
+        "arxivURL": "https://arxiv.org/abs/2310.03239",
+        "paperURL": "https://arxiv.org/pdf/2310.03239"
+      },
+      "abstract": "This paper aims to improve the computational efficiency of motion planning for mobile robots with non-trivial dynamics through the use of learned controllers. It adopts a decoupled strategy, where a system-specific controller is first trained offline in an empty environment to deal with the robot's dynamics. For a target environment, the proposed approach constructs offline a data structure, a \"Roadmap with Gaps,\" to approximately learn how to solve planning queries in this environment using the learned controller. The nodes of the roadmap correspond to local regions. Edges correspond to applications of the learned control policy that approximately connect these regions. Gaps arise because the controller does not perfectly connect pairs of individual states along edges. Online, given a query, a tree sampling-based motion planner uses the roadmap so that the tree's expansion is informed towards the goal region. The tree expansion selects local subgoals given a wavefront on the roadmap that guides towards the goal. When the controller cannot reach a subgoal region, the planner resorts to random exploration to maintain probabilistic completeness and asymptotic optimality. The accompanying experimental evaluation shows that the approach significantly improves the computational efficiency of motion planning on various benchmarks, including physics-based vehicular models on uneven and varying friction terrains as well as a quadrotor under air pressure effects."
     }
   }
 }

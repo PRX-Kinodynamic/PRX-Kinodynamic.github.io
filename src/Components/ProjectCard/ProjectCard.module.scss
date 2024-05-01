@@ -24,6 +24,11 @@ $border_radius: 0.5rem;
     transform: translate3d(0, -0.3rem, 0);
     box-shadow: 0.25rem 0.25rem 0.2rem 0.1rem rgba(0, 0, 0, 0.4);
     cursor: pointer;
+
+    & .redirectLogo {
+      stroke: $light_grey;
+      fill: $light_grey;
+    }
   }
 }
 
@@ -39,6 +44,17 @@ $border_radius: 0.5rem;
   padding: $height_padding $side_padding;
   border-top-left-radius: $border_radius;
   border-top-right-radius: $border_radius;
+  transition: all .25s ease;
+}
+
+.redirectLogo {
+  z-index: 1;
+  position: absolute;
+  height: 10%;
+  bottom: 0;
+  right: .5rem;
+  fill: transparent;
+  stroke: transparent;
   transition: all .25s ease;
 }
 

@@ -14,6 +14,7 @@ import styles from './Project.module.scss';
 
 import config from 'config';
 import BibTeX from "./Components/BibTeX";
+import Venue from "./Components/Venue";
 
 function Project(props) {
   const match = useRouteMatch();
@@ -28,16 +29,17 @@ function Project(props) {
   return (
     <div className={styles.container}>
       <Title name={projectDetails.name}/>
-      <Authors
+      {projectDetails.venue && <Venue venue={projectDetails.venue}/>}
+      {projectDetails.authors && <Authors
         authors={projectDetails.authors}
         equalContributors={projectDetails.equalContributors}
         showDepartments={projectDetails.showDepartments}
         showInstituteByNumber={projectDetails.showInstituteByNumber}
-      />
-      <Links links={projectDetails.links}/>
-      <Video {...projectDetails.videoDetails} name={projectDetails.name}/>
-      <Abstract abstract={projectDetails.abstract}/>
-      <BibTeX bibtex={projectDetails.bibtex}/>
+      />}
+      {projectDetails.links && <Links links={projectDetails.links}/>}
+      {projectDetails.videoDetails && <Video {...projectDetails.videoDetails} name={projectDetails.name}/>}
+      {projectDetails.abstract && <Abstract abstract={projectDetails.abstract}/>}
+      {projectDetails.bibtex && <BibTeX bibtex={projectDetails.bibtex}/>}
     </div>
   );
 }

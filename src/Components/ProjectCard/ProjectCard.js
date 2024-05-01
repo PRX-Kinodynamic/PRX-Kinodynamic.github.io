@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './ProjectCard.module.scss';
 import {useHistory} from "react-router-dom";
 import htmlParse from "html-react-parser";
-import {stripHTML} from "../../helpers";
+import { ReactComponent as RedirectSvg } from "./redirect.svg";
 
 function ProjectCard({projectDetails}) {
   const {
@@ -33,6 +33,12 @@ function ProjectCard({projectDetails}) {
     />
   );
   
+  const renderRedirectLogo = () => (
+    <RedirectSvg
+      className={styles.redirectLogo}
+    />
+  );
+  
   
   return (
     <div className={styles.container} onClick={handleClick}>
@@ -40,6 +46,7 @@ function ProjectCard({projectDetails}) {
         {htmlParse(projectDetails.name)}
       </div>
       {imageURL && renderImage()}
+      {should_redirect && renderRedirectLogo()}
     </div>
   );
 }

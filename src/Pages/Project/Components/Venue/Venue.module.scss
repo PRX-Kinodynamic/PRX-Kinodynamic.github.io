@@ -1,0 +1,28 @@
+@import 'src/styles.module.scss';
+
+.venue {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+.image {
+  height: 3.6rem;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  padding: .5rem;
+  transition: all 0.2s ease;
+  &:hover {
+    border-color: $light_grey;
+  }
+}
+
+.link {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  &:hover {
+    color: $honolulu_blue;
+    text-decoration-color: $honolulu_blue;
+  }
+}
