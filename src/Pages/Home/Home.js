@@ -1,6 +1,7 @@
 import React from 'react';
 
 import _map from 'lodash/map';
+import _filter from 'lodash/filter';
 
 import config from 'config';
 
@@ -13,7 +14,7 @@ function Home(props) {
       <div className={styles.projectsHeading}>Projects</div>
       <div className={styles.projectList}>
         {
-          _map(config.projects, (projectDetails, projectId) => (
+          _map(_filter(config.projects, ({unpublished}) => !unpublished), (projectDetails, projectId) => (
             <ProjectCard projectDetails={projectDetails} key={projectId}/>
           ))
         }
