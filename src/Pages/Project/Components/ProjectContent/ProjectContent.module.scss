@@ -1,0 +1,6 @@
+@import 'src/styles.module.scss';
+
+.container {
+  text-align: justify;
+  @include full-width;
+}

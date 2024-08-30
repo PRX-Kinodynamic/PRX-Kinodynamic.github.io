@@ -15,6 +15,7 @@ import styles from './Project.module.scss';
 import config from 'config';
 import BibTeX from "./Components/BibTeX";
 import Venue from "./Components/Venue";
+import ProjectContent from "./Components/ProjectContent";
 
 function Project({projectId}) {
   
@@ -38,6 +39,7 @@ function Project({projectId}) {
       {projectDetails.videoDetails && <Video {...projectDetails.videoDetails} name={projectDetails.name}/>}
       {projectDetails.abstract && <Abstract abstract={projectDetails.abstract}/>}
       {projectDetails.bibtex && <BibTeX bibtex={projectDetails.bibtex}/>}
+      {projectDetails.content && <ProjectContent content={projectDetails.content}/>}
     </div>
   );
 }
