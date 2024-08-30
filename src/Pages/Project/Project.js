@@ -16,9 +16,7 @@ import config from 'config';
 import BibTeX from "./Components/BibTeX";
 import Venue from "./Components/Venue";
 
-function Project(props) {
-  const match = useRouteMatch();
-  const projectId = match.params.projectId;
+function Project({projectId}) {
   
   const projectDetails = config.projects[projectId];
   

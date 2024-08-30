@@ -1,5 +1,19 @@
 @import 'src/styles.module.scss';
 
+.noSuchProjectContainer {
+  @include flex;
+  flex-direction: row;
+  margin-top: 2rem;
+
+  & > * {
+    &:first-child {
+      margin-right: 1rem;
+      padding-right: 1rem;
+      border-right: 1px solid;
+    }
+  }
+}
+
 .container {
   padding: 2rem 2rem 4rem 2rem;
   max-width: 55rem;
