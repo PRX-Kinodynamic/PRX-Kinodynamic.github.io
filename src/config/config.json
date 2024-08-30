@@ -78,10 +78,12 @@
       "name": "A Survey on the Integration of Machine Learning with Sampling-based Motion Planning",
       "url": "https://prx-kinodynamic.github.io/ML_SBMP_Survey",
       "should_redirect": true,
-      "imageURL": "%MEDIA_URL%/img/ml_sbmp_survey.png"
+      "imageURL": "%MEDIA_URL%/img/ml_sbmp_survey.png",
+      "sortKey": 1
     },
     "morals": {
       "id": "morals",
+      "sortKey": 2,
       "urlSuffix": "/projects/morals",
       "should_redirect": false,
       "imageURL": "%MEDIA_URL%/img/morals.jpeg",
@@ -116,11 +118,12 @@
       }
     },
     "rogue": {
+      "sortKey": 3,
       "id": "rogue",
       "urlSuffix": "/projects/rogue",
       "should_redirect": false,
       "imageURL": "%MEDIA_URL%/img/rogue.png",
-      "comment_bibtex": "@misc{sivaramakrishnan2024roadmaps,\n\tauthor={Aravind Sivaramakrishnan and Sumanth Tangirala and Edgar Granados and Noah R. Carver and Kostas E. Bekris},\n\ttitle={Roadmaps with Gaps over Controllers: Achieving Efficiency in Planning under Dynamics},\n}",
+      "bibtex": "@article{sivaramakrishnan2024roadmaps,\n\tauthor={Aravind Sivaramakrishnan and Sumanth Tangirala and Edgar Granados and Noah R. Carver and Kostas E. Bekris},\n\ttitle={Roadmaps with Gaps over Controllers: Achieving Efficiency in Planning under Dynamics},\n\tjournal={IROS},\n\tyear={2024},\n}",
 
       "name": "Roadmaps with Gaps over Controllers: Achieving Efficiency in Planning under Dynamics",
       "authors": [

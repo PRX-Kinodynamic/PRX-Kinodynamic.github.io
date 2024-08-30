@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useMemo} from 'react';
 
 import _map from 'lodash/map';
 import _filter from 'lodash/filter';
+import _sortBy from 'lodash/sortBy';
 
 import config from 'config';
 
@@ -9,12 +10,17 @@ import styles from './Home.module.scss';
 import ProjectCard from "../../Components/ProjectCard";
 
 function Home(props) {
+  const projects = useMemo(() => {
+      const projectsToDisplay = _filter(config.projects, ({unpublished}) => !unpublished);
+      return _sortBy(projectsToDisplay, ({sortKey}) => -(sortKey || 100));
+  }, []);
+  
   return (
     <div>
-      <div className={styles.projectsHeading}>Projects</div>
+      <div className={styles.projectsHeading}>Publications</div>
       <div className={styles.projectList}>
         {
-          _map(_filter(config.projects, ({unpublished}) => !unpublished), (projectDetails, projectId) => (
+          _map(projects, (projectDetails, projectId) => (
             <ProjectCard projectDetails={projectDetails} key={projectId}/>
           ))
         }
