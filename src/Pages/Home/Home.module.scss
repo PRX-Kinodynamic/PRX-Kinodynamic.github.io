@@ -1,6 +1,11 @@
 @import '../../styles.module';
 
+.container {
+  padding: 0 10rem;
+}
+
 .projectsHeading {
+  text-align: left;
   margin-top: 2rem;
   font-weight: 600;
   font-size: 2rem;
