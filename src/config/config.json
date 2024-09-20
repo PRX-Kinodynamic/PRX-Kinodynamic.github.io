@@ -69,6 +69,12 @@
       "url": "https://noahrcarver.github.io/",
       "institute": "rutgers",
       "department": "cs"
+    },
+    "dhruv": {
+      "name": "Dhruv Metha Ramesh",
+      "url": "https://dhruvmetha.github.io/",
+      "institute": "rutgers",
+      "department": "cs"
     }
   },
 
@@ -146,24 +152,27 @@
       "content": "<h1 id=\"sample-markdown\">Environments</h1>\n<span style=\"display: flex; flex-direction: row\">\n  <figure>\n    <img style=\"width: auto; height:240px;\" src=\"https://raw.githubusercontent.com/PRX-Kinodynamic/PRX-Kinodynamic.github.io/main/media/img/rogue/Elevation.png\" alt=\"\">\n    <figcaption style=\"text-align: center; padding-top: .5rem;\"><tt>Maze</tt></figcaption>\n  </figure>\n  <figure>\n    <img style=\"width: auto; height:240px;\" src=\"https://raw.githubusercontent.com/PRX-Kinodynamic/PRX-Kinodynamic.github.io/main/media/img/rogue/Friction.png\" alt=\"\">\n    <figcaption style=\"text-align: center; padding-top: .5rem;\"><tt>Terrain</tt></figcaption>\n  </figure>\n</span>\n<span style=\"display: flex; flex-direction: row; margin-top: 1rem;\">\n  <figure>\n    <img style=\"width: auto; height:240px;\" src=\"https://raw.githubusercontent.com/PRX-Kinodynamic/PRX-Kinodynamic.github.io/main/media/img/rogue/Maze.png\" alt=\"\">\n    <figcaption style=\"text-align: center; padding-top: .5rem;\"><tt>Friction</tt></figcaption>\n  </figure>\n  <figure>\n    <img style=\"width: auto; height:240px;\" src=\"https://raw.githubusercontent.com/PRX-Kinodynamic/PRX-Kinodynamic.github.io/main/media/img/rogue/Quadrotor.png\" alt=\"\">\n    <figcaption style=\"text-align: center; padding-top: .5rem;\"><tt>Quadrotor</tt></figcaption>\n  </figure>\n</span>\n"
     },
     "kraft": {
-      "unpublished": true,
+      "unpublished": false,
       "id": "kraft",
       "urlSuffix": "/projects/kraft",
       "should_redirect": false,
-      "imageURL": "%MEDIA_URL%/img/kraft.png",
+      "imageURL": "%MEDIA_URL%/img/kraft.gif",
       "comment_bibtex": "@misc{sivaramakrishnan2024kraft,\n\tauthor={Aravind Sivaramakrishnan and Sumanth Tangirala and Edgar Granados and Kostas E. Bekris},\n\ttitle={KRAFT: Sampling-Based Kinodynamic Replanning and Feedback Control\nover Approximate, Identified Models of Vehicular Systems},\n}",
 
-      "name": "KRAFT: Sampling-Based Kinodynamic Replanning and Feedback Control\nover Approximate, Identified Models of Vehicular Systems",
+      "name": "<tt>KRAFT:</tt><br/> Sampling-Based Kinodynamic Replanning and Feedback Control over Approximate, Identified Models of Vehicular Systems",
       "authors": [
         "aravind",
         "sumanth",
+        "dhruv",
         "edgar",
         "kostas"
       ],
       "showDepartments": true,
       "links": {
+        "paperURL": "https://arxiv.org/pdf/2409.11522",
+        "arxivURL": "https://arxiv.org/abs/2409.11522"
       },
-      "abstract": "Lorem Ipsum."
+      "abstract": "This paper aims to increase the safety and reliability of executing trajectories planned for robots with non-trivial dynamics given a light-weight, approximate dynamics model. Scenarios include mobile robots navigating through workspaces with imperfectly modeled surfaces and unknown friction. The proposed approach, Kinodynamic Replanning over Approximate Models with Feedback Tracking (KRAFT), integrates: (i) replanning via an asymptotically optimal sampling-based kinodynamic tree planner, with (ii) trajectory following via feedback control, and (iii) a safety mechanism to reduce collision due to second-order dynamics. The planning and control components use a rough dynamics model expressed analytically via differential equations, which is tuned via system identification (SysId) in a training environment but not the deployed one. This allows the process to be fast and achieve long-horizon reasoning during each replanning cycle. At the same time, the model still includes gaps with reality, even after SysID, in new environments. Experiments demonstrate the limitations of kinematic path planning and path tracking approaches, highlighting the importance of: (a) closing the feedback-loop also at the planning level; and (b) long-horizon reasoning, for safe and efficient trajectory execution given inaccurate models."
     }
   }
 }
