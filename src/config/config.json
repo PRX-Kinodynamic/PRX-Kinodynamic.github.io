@@ -172,6 +172,9 @@
         "paperURL": "https://arxiv.org/pdf/2409.11522",
         "arxivURL": "https://arxiv.org/abs/2409.11522"
       },
+      "videoDetails": {
+        "youtubeEmbedURL": "https://www.youtube.com/embed/IwBQtPVld0g?si=PRV0IsZBp5djqPTC"
+      },
       "abstract": "This paper aims to increase the safety and reliability of executing trajectories planned for robots with non-trivial dynamics given a light-weight, approximate dynamics model. Scenarios include mobile robots navigating through workspaces with imperfectly modeled surfaces and unknown friction. The proposed approach, <tt>K</tt>inodynamic <tt>R</tt>eplanning over <tt>A</tt>pproximate Models with <tt>F</tt>eedback <tt>T</tt>racking (<tt>KRAFT</tt>), integrates: (i) replanning via an asymptotically optimal sampling-based kinodynamic tree planner, with (ii) trajectory following via feedback control, and (iii) a safety mechanism to reduce collision due to second-order dynamics. The planning and control components use a rough dynamics model expressed analytically via differential equations, which is tuned via system identification (SysId) in a training environment but not the deployed one. This allows the process to be fast and achieve long-horizon reasoning during each replanning cycle. At the same time, the model still includes gaps with reality, even after SysID, in new environments. Experiments demonstrate the limitations of kinematic path planning and path tracking approaches, highlighting the importance of: (a) closing the feedback-loop also at the planning level; and (b) long-horizon reasoning, for safe and efficient trajectory execution given inaccurate models."
     }
   }
