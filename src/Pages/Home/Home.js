@@ -9,6 +9,7 @@ import config from 'config';
 
 import styles from './Home.module.scss';
 import ProjectCard from "../../Components/ProjectCard";
+import _reduce from "lodash/reduce";
 
 function Home(props) {
   const projects = useMemo(() => {
@@ -16,13 +17,14 @@ function Home(props) {
       return _sortBy(projectsToDisplay, ({sortKey}) => -(sortKey || 100));
   }, []);
   
-  const preprints = useMemo(() => {
-    return _filter(projects, ({preprint}) => !!preprint);
-  }, [projects]);
+  const [preprints, publications] = useMemo(() => _reduce(projects, (acc, project) => {
+    const isPreprint = !project.venue;
+    return [
+      isPreprint ? [...acc[0], project] : acc[0],
+      !isPreprint ? [...acc[1], project] : acc[1]
+    ]
+  }, [[], []]), [projects]);
   
-  const publications = useMemo(() => {
-    return _filter(projects, ({preprint}) => !preprint);
-  }, [projects]);
   
   return (
     <div className={styles.container}>

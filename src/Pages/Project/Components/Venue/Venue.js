@@ -4,20 +4,39 @@ import cx from 'classnames';
 import styles from './Venue.module.scss';
 
 function Venue({venue}) {
-  const {name, url, imageURL} = venue;
+  const isPreprint = !venue;
   
   const handleClick = () => {
-      if (!url) return;
+      if (!venue?.url) return;
       
-      window.open(url, '_blank');
+      window.open(venue.url, '_blank');
   }
   
+  const renderVenue = () => {
+    console.log(isPreprint)
+    const {name, url, imageURL} = venue;
+    return (
+      <>
+        Proceedings of
+        <div className={cx(styles.venue, {[styles.link]: !!url})} onClick={handleClick}>
+          {imageURL &&
+            <img src={imageURL} alt={name} className={styles.image}/>
+          }
+          {name}
+        </div>
+      </>
+    )
+  }
+  
+  const renderUnderReview = ()  => (
+    <div>
+      Under Review
+    </div>
+  );
+  
   return (
-    <div className={cx(styles.venue, {[styles.link]: !!url})} onClick={handleClick}>
-      {imageURL ?
-        <img src={imageURL} alt={name} className={styles.image}/> :
-        name
-      }
+    <div className={styles.venueContainer}>
+      {isPreprint ? renderUnderReview() : renderVenue()}
     </div>
   );
 }

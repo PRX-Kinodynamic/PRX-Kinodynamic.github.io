@@ -1,19 +1,26 @@
 @import 'src/styles.module.scss';
 
+.venueContainer {
+  font-size: 1.1rem;
+  margin-bottom: .8rem;
+}
+
 .venue {
-  font-size: 1.3rem;
-  font-weight: bolder;
+  @include flex;
+  margin-top: .4rem;
+
+  //padding: 0.5rem 1rem;
+  //transition: all 0.2s ease;
+  //border: 2px solid transparent;
+  //border-radius: 1rem;
+  //&:hover {
+  //  border-color: $light_grey;
+  //}
 }
 
 .image {
-  height: 3.6rem;
-  border: 2px solid transparent;
-  border-radius: 1rem;
-  padding: .5rem;
-  transition: all 0.2s ease;
-  &:hover {
-    border-color: $light_grey;
-  }
+  height: 3.2rem;
+  margin-right: 1.2rem;
 }
 
 .link {

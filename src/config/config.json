@@ -85,7 +85,10 @@
       "url": "https://prx-kinodynamic.github.io/ML_SBMP_Survey",
       "should_redirect": true,
       "imageURL": "%MEDIA_URL%/img/ml_sbmp_survey.png",
-      "sortKey": 1
+      "sortKey": 1,
+      "venue": {
+        "name": "Foundations and Trends® in Robotics"
+      }
     },
     "morals": {
       "id": "morals",
@@ -96,7 +99,7 @@
       "bibtex": "@article{vieira2024morals,\n\tauthor={Ewerton R. Vieira and Aravind Sivaramakrishnan and Sumanth Tangirala and Edgar Granados and Konstantin Mischaikow and Kostas E. Bekris},\n\ttitle={MORALS: Analysis of High-Dimensional Robot Controllers via Topological Tools in a Latent Space}, \n\tjournal={ICRA}, \n\tyear={2024},\n}",
       "venue": {
         "imageURL": "%LOCAL_MEDIA_URL%/img/icra_2024.png",
-        "name": "ICRA 2024",
+        "name": "IEEE International Conference on Robotics and Automation (ICRA), 2024",
         "url": "https://2024.ieee-icra.org/"
       },
       "name": "<tt>MORALS:</tt><br/> Analysis of High-Dimensional Robot Controllers via Topological Tools in a Latent Space",
@@ -130,7 +133,10 @@
       "should_redirect": false,
       "imageURL": "%MEDIA_URL%/img/rogue.png",
       "bibtex": "@article{sivaramakrishnan2024roadmaps,\n\tauthor={Aravind Sivaramakrishnan and Sumanth Tangirala and Edgar Granados and Noah R. Carver and Kostas E. Bekris},\n\ttitle={Roadmaps with Gaps over Controllers: Achieving Efficiency in Planning under Dynamics},\n\tjournal={IROS},\n\tyear={2024},\n}",
-
+      "venue": {
+        "name": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2024",
+        "url": "https://iros2024-abudhabi.org/"
+      },
       "name": "Roadmaps with Gaps over Controllers: Achieving Efficiency in Planning under Dynamics",
       "authors": [
         "aravind",
@@ -152,7 +158,6 @@
       "content": "<h1 id=\"sample-markdown\">Environments</h1>\n<span style=\"display: flex; flex-direction: row\">\n  <figure>\n    <img style=\"width: auto; height:240px;\" src=\"https://raw.githubusercontent.com/PRX-Kinodynamic/PRX-Kinodynamic.github.io/main/media/img/rogue/Elevation.png\" alt=\"\">\n    <figcaption style=\"text-align: center; padding-top: .5rem;\"><tt>Maze</tt></figcaption>\n  </figure>\n  <figure>\n    <img style=\"width: auto; height:240px;\" src=\"https://raw.githubusercontent.com/PRX-Kinodynamic/PRX-Kinodynamic.github.io/main/media/img/rogue/Friction.png\" alt=\"\">\n    <figcaption style=\"text-align: center; padding-top: .5rem;\"><tt>Terrain</tt></figcaption>\n  </figure>\n</span>\n<span style=\"display: flex; flex-direction: row; margin-top: 1rem;\">\n  <figure>\n    <img style=\"width: auto; height:240px;\" src=\"https://raw.githubusercontent.com/PRX-Kinodynamic/PRX-Kinodynamic.github.io/main/media/img/rogue/Maze.png\" alt=\"\">\n    <figcaption style=\"text-align: center; padding-top: .5rem;\"><tt>Friction</tt></figcaption>\n  </figure>\n  <figure>\n    <img style=\"width: auto; height:240px;\" src=\"https://raw.githubusercontent.com/PRX-Kinodynamic/PRX-Kinodynamic.github.io/main/media/img/rogue/Quadrotor.png\" alt=\"\">\n    <figcaption style=\"text-align: center; padding-top: .5rem;\"><tt>Quadrotor</tt></figcaption>\n  </figure>\n</span>\n"
     },
     "kraft": {
-      "preprint": true,
       "unpublished": false,
       "id": "kraft",
       "urlSuffix": "/projects/kraft",

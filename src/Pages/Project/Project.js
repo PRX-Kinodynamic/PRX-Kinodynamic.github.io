@@ -1,7 +1,5 @@
 import React, {useEffect} from 'react';
 
-import {useRouteMatch} from "react-router-dom";
-
 import Abstract from "./Components/Abstract";
 import Authors from "./Components/Authors";
 import Links from "./Components/Links";
@@ -28,13 +26,13 @@ function Project({projectId}) {
   return (
     <div className={styles.container}>
       <Title name={projectDetails.name}/>
-      {projectDetails.venue && <Venue venue={projectDetails.venue}/>}
       {projectDetails.authors && <Authors
         authors={projectDetails.authors}
         equalContributors={projectDetails.equalContributors}
         showDepartments={projectDetails.showDepartments}
         showInstituteByNumber={projectDetails.showInstituteByNumber}
       />}
+      {<Venue venue={projectDetails.venue}/>}
       {projectDetails.links && <Links links={projectDetails.links}/>}
       {projectDetails.videoDetails && <Video {...projectDetails.videoDetails} name={projectDetails.name}/>}
       {projectDetails.abstract && <Abstract abstract={projectDetails.abstract}/>}
