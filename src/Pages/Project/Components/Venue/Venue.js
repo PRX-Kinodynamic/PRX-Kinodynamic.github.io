@@ -13,7 +13,6 @@ function Venue({venue}) {
   }
   
   const renderVenue = () => {
-    console.log(isPreprint)
     const {name, url, imageURL} = venue;
     return (
       <>

@@ -6,11 +6,13 @@ import NavBar from "../../Components/NavBar";
 import Routes from "./routes";
 
 function Base(props) {
+  const contentContainerRef = React.useRef(null);
+  
   return (
     <>
       <NavBar/>
-      <div className={styles.contentContainer}>
-        <Routes />
+      <div className={styles.contentContainer} ref={contentContainerRef}>
+        <Routes contentContainerRef={contentContainerRef} />
       </div>
       
     </>
