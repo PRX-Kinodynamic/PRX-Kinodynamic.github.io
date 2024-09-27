@@ -9,6 +9,7 @@ function Routes({contentContainerRef}) {
   const [prevPath, setPrevPath] = React.useState();
 
   useLayoutEffect(() => {
+    if (!contentContainerRef.current) return;
     if (location.pathname === "/") {
       contentContainerRef.current.scrollTo(0, homeScroll);
     }
@@ -17,7 +18,7 @@ function Routes({contentContainerRef}) {
       contentContainerRef.current.scrollTo(0, 0);
     }
     setPrevPath(location.pathname);
-  }, [contentContainerRef, homeScroll, setHomeScroll, location.pathname]);
+  }, [contentContainerRef.current, homeScroll, setHomeScroll, location.pathname]);
   
   return (
     <Switch>
