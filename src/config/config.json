@@ -157,6 +157,32 @@
       },
       "content": "<h1 id=\"sample-markdown\">Environments</h1>\n<span style=\"display: flex; flex-direction: row\">\n  <figure>\n    <img style=\"width: auto; height:240px;\" src=\"https://raw.githubusercontent.com/PRX-Kinodynamic/PRX-Kinodynamic.github.io/main/media/img/rogue/Elevation.png\" alt=\"\">\n    <figcaption style=\"text-align: center; padding-top: .5rem;\"><tt>Maze</tt></figcaption>\n  </figure>\n  <figure>\n    <img style=\"width: auto; height:240px;\" src=\"https://raw.githubusercontent.com/PRX-Kinodynamic/PRX-Kinodynamic.github.io/main/media/img/rogue/Friction.png\" alt=\"\">\n    <figcaption style=\"text-align: center; padding-top: .5rem;\"><tt>Terrain</tt></figcaption>\n  </figure>\n</span>\n<span style=\"display: flex; flex-direction: row; margin-top: 1rem;\">\n  <figure>\n    <img style=\"width: auto; height:240px;\" src=\"https://raw.githubusercontent.com/PRX-Kinodynamic/PRX-Kinodynamic.github.io/main/media/img/rogue/Maze.png\" alt=\"\">\n    <figcaption style=\"text-align: center; padding-top: .5rem;\"><tt>Friction</tt></figcaption>\n  </figure>\n  <figure>\n    <img style=\"width: auto; height:240px;\" src=\"https://raw.githubusercontent.com/PRX-Kinodynamic/PRX-Kinodynamic.github.io/main/media/img/rogue/Quadrotor.png\" alt=\"\">\n    <figcaption style=\"text-align: center; padding-top: .5rem;\"><tt>Quadrotor</tt></figcaption>\n  </figure>\n</span>\n"
     },
+    "stela": {
+      "sortKey": 5,
+      "id": "stela",
+      "urlSuffix": "/projects/stela",
+      "should_redirect": false,
+      "imageURL": "%MEDIA_URL%/img/stela.gif",
+      "bibtex": "@inproceedings{granados2025kinodynamic,\n\tauthor={E Granados and S Tangirala and K Bekris},\n\ttitle={Kinodynamic Trajectory Following with STELA: Simultaneous Trajectory Estimation & Local Adaptation},\n\tbooktitle={Proceedings of Robotics: Science and Systems (RSS)},\n\tyear={2025},\n}",
+      "venue": {
+        "name": "Robotics: Science and Systems (RSS), 2025",
+        "url": "https://roboticsconference.org/"
+      },
+      "name": "Kinodynamic Trajectory Following with STELA: Simultaneous Trajectory Estimation & Local Adaptation",
+      "authors": [
+        "edgar",
+        "sumanth",
+        "kostas"
+      ],
+      "showDepartments": true,
+      "links": {
+      },
+      "abstract": "This paper aims to improve the computational efficiency of motion planning for mobile robots with non-trivial dynamics through the use of learned controllers. It adopts a decoupled strategy, where a system-specific controller is first trained offline in an empty environment to deal with the robot's dynamics. For a target environment, the proposed approach constructs offline a data structure, a \"Roadmap with Gaps,\" to approximately learn how to solve planning queries in this environment using the learned controller. The nodes of the roadmap correspond to local regions. Edges correspond to applications of the learned control policy that approximately connect these regions. Gaps arise because the controller does not perfectly connect pairs of individual states along edges. Online, given a query, a tree sampling-based motion planner uses the roadmap so that the tree's expansion is informed towards the goal region. The tree expansion selects local subgoals given a wavefront on the roadmap that guides towards the goal. When the controller cannot reach a subgoal region, the planner resorts to random exploration to maintain probabilistic completeness and asymptotic optimality. The accompanying experimental evaluation shows that the approach significantly improves the computational efficiency of motion planning on various benchmarks, including physics-based vehicular models on uneven and varying friction terrains as well as a quadrotor under air pressure effects.",
+      "videoDetails": {
+        "youtubeEmbedURL": "https://www.youtube.com/embed/VkaqiPceVl4",
+        "thumbnailURL": "%MEDIA_URL%/img/stela.png"
+      }
+    },
     "kraft": {
       "unpublished": false,
       "id": "kraft",
